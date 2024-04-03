@@ -206,7 +206,7 @@ in {
       color.ui = true;
       # core.askPass = ""; # needs to be empty to use terminal for ask pass
       # credential.helper = "store"; # want to make this more secure
-      credential.helper=osxkeychain
+      credential.helper=osxkeychain;
       # github.user = "thomasklwong";
       # push.default = "tracking";
       # init.defaultBranch = "main";
