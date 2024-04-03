@@ -7,6 +7,9 @@
 
   homebrew = {
     enable = true;
+    brews = [
+      "tsduck"
+    ];
     casks  = [
       "1password"
       "adobe-digital-editions"
@@ -50,7 +53,6 @@
       "teamviewer"
       "telegram"
       "the-unarchiver"
-      "tsduck"
       "ui"
       "upscayl"
       "utm"
