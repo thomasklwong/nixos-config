@@ -46,6 +46,7 @@ in {
     tailscale
     tree
     watch
+    yt-dlp
 
     # Broken
     # tsduck
