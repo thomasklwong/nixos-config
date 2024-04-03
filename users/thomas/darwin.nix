@@ -50,6 +50,7 @@
       "teamviewer"
       "telegram"
       "the-unarchiver"
+      "tsduck"
       "ui"
       "upscayl"
       "utm"

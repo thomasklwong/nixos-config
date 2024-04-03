@@ -45,8 +45,11 @@ in {
     ripgrep
     tailscale
     tree
-    tsduck
     watch
+
+    # Broken
+    # tsduck
+
     # pkgs.asciinema
     # pkgs.bat
     # pkgs.fd
