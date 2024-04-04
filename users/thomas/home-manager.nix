@@ -30,6 +30,7 @@ in {
   # per-project flakes sourced with direnv and nix-shell, so this is
   # not a huge list.
   home.packages = with pkgs; [
+    _1password
     bat
     colima
     docker
@@ -205,17 +206,54 @@ in {
       prettylog = "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(r) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative";
       root = "rev-parse --show-toplevel";
     };
+
     extraConfig = {
-      # branch.autosetuprebase = "always";
       color.ui = true;
-      # core.askPass = ""; # needs to be empty to use terminal for ask pass
-      # credential.helper = "store"; # want to make this more secure
-      credential.helper="osxkeychain";
-      # github.user = "thomasklwong";
-      # push.default = "tracking";
-      # init.defaultBranch = "main";
+      core.editor = "code --wait --new-window";
+
+      branch.sort = "-committerdate";
+      
+      diff.algorithm = "histogram";
+      diff.colorMoved = "default";
+      diff.tool = "vscode";
+      difftool.vscode.cmd = "code --wait --diff $LOCAL $REMOTE";
+      
+      merge.tool = "vscode";
+      mergetool.vscode.cmd = "code --wait --merge $REMOTE $LOCAL $BASE $MERGED";
+      merge.keepbackup = false;
+
+      help.autocorrect = 10;
+
+      init.defaultBranch = "main";
+
+      commit.verbose = true;
+      
+      fetch.prune = true;
+
+      pull.ff = true;
+
+      push.default = "simple";
+      push.autoSetupRemote = true;
+      push.followtags = true;
+
+      rebase.autosquash = true;
+      rebase.autostash = true;
+      rerere.enabled = true;
+
+      # Added by git package automatically
+      # credential.helper="osxkeychain";
+
+      # If not defined git will try to write to ~/.gitconfig
+      filter.lts.process = "git-lfs filter-process";
+      filter.lts.required = true;
+      filter.lts.clean = "git-lfs clean -- %f";
+      filter.lts.smudge = "git-lfs smudge -- %f";
     };
   };
+
+  # TODO
+  # https://developer.1password.com/docs/ssh/get-started
+  # https://developer.1password.com/docs/ssh/git-commit-signing
 
   # programs.go = {
   #   enable = true;

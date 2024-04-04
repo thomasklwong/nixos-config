@@ -5,6 +5,10 @@
   #   (import ./vim.nix { inherit inputs; })
   # ];
 
+  nixpkgs.config = {
+    allowUnfree = true;
+  };
+
   homebrew = {
     enable = true;
     brews = [
