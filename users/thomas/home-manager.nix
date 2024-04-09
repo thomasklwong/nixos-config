@@ -195,6 +195,8 @@ in {
 
   programs.git = {
     enable = true;
+    lfs.enable = true;
+
     userName = "Thomas Wong";
     userEmail = "1935201+thomasklwong@users.noreply.github.com";
     # signing = {
