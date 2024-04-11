@@ -96,6 +96,7 @@ in {
     EDITOR = "code";
     PAGER = "less -FirSwX";
     MANPAGER = "${manpager}/bin/manpager";
+    NVM_DIR = "$HOME/.config/nvm";
   };
 
   # home.file.".gdbinit".source = ./gdbinit;
@@ -125,6 +126,11 @@ in {
   #---------------------------------------------------------------------
 
   programs.gpg.enable = !isDarwin;
+
+  programs.zsh = {
+    enable = true;
+    # initExtra = builtins.readFile ./zshrc;
+  };
 
   programs.bash = {
     enable = true;
@@ -257,9 +263,7 @@ in {
     };
   };
 
-  programs.zsh = {
-    enable = true;
-  };
+  
 
   # TODO
   # https://developer.1password.com/docs/ssh/get-started
