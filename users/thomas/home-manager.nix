@@ -257,6 +257,10 @@ in {
     };
   };
 
+  programs.zsh = {
+    enable = true;
+  };
+
   # TODO
   # https://developer.1password.com/docs/ssh/get-started
   # https://developer.1password.com/docs/ssh/git-commit-signing
