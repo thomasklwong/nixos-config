@@ -129,7 +129,7 @@ in {
 
   programs.zsh = {
     enable = true;
-    # initExtra = builtins.readFile ./zshrc;
+    initExtra = builtins.readFile ./zshrc;
   };
 
   programs.bash = {
