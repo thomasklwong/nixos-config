@@ -85,6 +85,10 @@ in {
   # Env vars and dotfiles
   #---------------------------------------------------------------------
 
+  home.sessionPath = [
+    "$HOME/tizen-studio/tools/ide/bin/"
+  ];
+
   home.sessionVariables = {
     LANG = "en_US.UTF-8";
     LC_CTYPE = "en_US.UTF-8";
