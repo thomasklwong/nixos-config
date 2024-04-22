@@ -32,6 +32,7 @@ in {
   home.packages = with pkgs; [
     _1password
     bat
+    cabextract
     colima
     docker
     docker-compose
@@ -41,12 +42,17 @@ in {
     gh
     htop
     jq
+    lz4
     nodejs
+    python3
     qemu
     ripgrep
+    sqlite
+    streamlink
     tailscale
     tree
     watch
+    xz
     yt-dlp
 
     # Broken

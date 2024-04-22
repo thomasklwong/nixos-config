@@ -11,6 +11,11 @@
 
   homebrew = {
     enable = true;
+    taps = [
+      "gcenx/wine"
+      "homebrew/cask-versions"
+      "majd/repo"
+    ];
     brews = [
       "tsduck"
     ];
@@ -83,6 +88,23 @@
       # "slack"
       # "spotify"
     ];
+    masApps = {
+      "HP Smart" = 1474276998;
+      "1Password for Safari" = 1569813296;
+      "iMovie" = 408981434;
+      "Pages" = 409201541;
+      "Disk Speed Test" = 425264550;
+      "Keynote" = 409183694;
+      "Xcode" = 497799835;
+      "GoPro Player" = 1460836908;
+      "LINE" = 539883307;
+      "Numbers" = 409203825;
+    };
+    onActivation = {
+      autoUpdate = true;
+      cleanup = "zap";
+      upgrade = true;
+    };
   };
 
   # The user should already exist, but we need to set this up so Nix knows
