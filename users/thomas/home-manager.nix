@@ -34,6 +34,7 @@ in {
     bat
     cabextract
     colima
+    devenv
     docker
     docker-compose
     fd

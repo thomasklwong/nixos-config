@@ -24,6 +24,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    devenv = {
+      url = "github:cachix/devenv";
+      inputs.nixpkgs.follows = "nixpkgs-unstable";
+    };
+
     # I think technically you're not supposed to override the nixpkgs
     # used by neovim but recently I had failures if I didn't pin to my
     # own. We can always try to remove that anytime.
@@ -50,6 +55,7 @@
   outputs = { self, nixpkgs, home-manager, darwin, ... }@inputs: let
     # Overlays is the list of overlays we want to apply from flake inputs.
     overlays = [
+      inputs.devenv.overlays.default
       # inputs.neovim-nightly-overlay.overlay
       # inputs.zig.overlays.default
     ];
