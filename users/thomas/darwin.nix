@@ -62,6 +62,7 @@
       "spotify"
       "tailscale"
       "teamviewer"
+      "temurin"
       "telegram"
       "the-unarchiver"
       "ui"
