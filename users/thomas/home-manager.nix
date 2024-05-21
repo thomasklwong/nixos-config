@@ -31,6 +31,7 @@ in {
   # not a huge list.
   home.packages = with pkgs; [
     _1password
+    awscli2
     bat
     cabextract
     colima
@@ -51,6 +52,7 @@ in {
     sqlite
     streamlink
     tailscale
+    terraform
     tree
     watch
     xz
