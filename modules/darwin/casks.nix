@@ -10,7 +10,8 @@ _:
   "caffeine"
   "calibre"
   "charles"
-  # "coconutbattery"
+  # Slow install
+  "coconutbattery"
   "disk-drill"
   "firefox"
   "firefox@developer-edition"
