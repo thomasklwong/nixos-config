@@ -6,7 +6,6 @@ with pkgs; [
   # at /Application
   _1password
   age
-  alacritty
   aspell
   aspellDicts.en
   awscli2
