@@ -21,7 +21,6 @@ with pkgs; [
   fd
   ffmpeg
   fzf
-  gh
   htop
   jq
   killall
