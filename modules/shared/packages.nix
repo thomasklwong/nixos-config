@@ -1,8 +1,10 @@
 { pkgs }:
 
 with pkgs; [
+  # Cannot use 1password via Nix App it seems
+  # as it will complain it is not installed
+  # at /Application
   _1password
-  _1password-gui
   age
   alacritty
   aspell
