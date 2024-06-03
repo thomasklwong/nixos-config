@@ -16,6 +16,10 @@ let
    "${config.users.users.${user}.home}/Library/Application Support/Rectangle/RectangleConfig.json" = {
       text = builtins.readFile ../darwin/config/RectangleConfig.json;
    };
+
+   "${xdg_configHome}/alacritty/alacritty.toml" = {
+      text = builtins.readFile ../darwin/config/alacritty.toml;
+   };
 # 
 #   # Raycast script so that "Run Emacs" is available and uses Emacs daemon
 #   "${xdg_dataHome}/bin/emacsclient" = {
