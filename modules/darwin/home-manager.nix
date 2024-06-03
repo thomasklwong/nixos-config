@@ -27,6 +27,7 @@ in
     enable = true;
     brews = pkgs.callPackage ./brews.nix {};
     casks = pkgs.callPackage ./casks.nix {};
+    taps = builtins.attrNames config.nix-homebrew.taps;
 
     onActivation = {
       autoUpdate = true;
@@ -38,17 +39,18 @@ in
       ];
     };
 
-    # These app IDs are from using the mas CLI app
-    # mas = mac app store
-    # https://github.com/mas-cli/mas
-    #
-    # $ nix shell nixpkgs#mas
-    # $ mas search <app name>
-    #
-    # masApps = {
-    #   "1password" = 1333542190;
-    #   "wireguard" = 1451685025;
-    # };
+    masApps = {
+      "HP Smart" = 1474276998;
+      "1Password for Safari" = 1569813296;
+      # "iMovie" = 408981434;
+      # "Pages" = 409201541;
+      "Disk Speed Test" = 425264550;
+      # "Keynote" = 409183694;
+      "Xcode" = 497799835;
+      "GoPro Player" = 1460836908;
+      "LINE" = 539883307;
+      # "Numbers" = 409203825;
+    };
   };
 
   # Enable home-manager
