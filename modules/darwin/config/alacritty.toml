@@ -1,1 +1,22 @@
-import = []
+import = ["./alacritty_dracula.toml"]
+
+#[shell]
+#program = "/run/current-system/sw/bin/zsh"
+#args = ["--login"]
+
+#working_directory = "<string>" | "None"
+
+[window]
+padding = { x = 24, y = 24 }
+decorations = "Transparent"
+opacity = 0.7
+blur = true
+decorations_theme_variant = "Dark"
+resize_increments = true
+option_as_alt = "Both"
+
+[scrolling]
+history = 100000
+
+[font]
+size = 12
