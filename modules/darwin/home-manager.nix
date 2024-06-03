@@ -20,6 +20,7 @@ in
     name = "${user}";
     home = "/Users/${user}";
     isHidden = false;
+    # TODO This does not chsh on darwin?!
     shell = pkgs.zsh;
   };
 
