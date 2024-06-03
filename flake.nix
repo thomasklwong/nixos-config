@@ -105,8 +105,6 @@
                   "homebrew/homebrew-core" = homebrew-core;
                   "homebrew/homebrew-cask" = homebrew-cask;
                   "homebrew/homebrew-bundle" = homebrew-bundle;
-                  # "majd/homebrew-repo" = inputs.majd-ipatool;
-                  # "hashicorp/homebrew-tap" = inputs.hashicorp;
                 };
                 mutableTaps = false;
                 autoMigrate = true;
