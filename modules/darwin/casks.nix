@@ -10,6 +10,8 @@ _:
   "brave-browser@beta"
   "caffeine"
   "calibre"
+  # Find out how
+  # "canon-ufrii-driver"
   "charles"
   # Slow install
   "coconutbattery"
