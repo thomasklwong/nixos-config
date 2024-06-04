@@ -21,6 +21,7 @@ in
     home = "/Users/${user}";
     isHidden = false;
     # TODO This does not chsh on darwin?!
+    # /Users/thomas/.nix-profile/bin/zsh
     shell = pkgs.zsh;
   };
 

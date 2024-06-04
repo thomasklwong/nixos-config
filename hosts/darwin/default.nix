@@ -33,6 +33,7 @@ let user = "thomas"; in
   };
 
   programs = {
+    # /run/current-system/sw/bin/zsh
     zsh.enable = true;
   };
 
