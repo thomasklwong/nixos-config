@@ -46,6 +46,12 @@ let user = "thomas"; in
     agenix.packages."${pkgs.system}".default
   ] ++ (import ../../modules/shared/packages.nix { inherit pkgs; });
 
+  environment = {
+    shells = [ pkgs.bashInteractive pkgs.zsh ];
+  };
+  # This does not work. Need to manually fix it.
+  users.users.thomas.shell = pkgs.zsh;
+
   # Enable fonts dir
   fonts.fontDir.enable = true;
 
