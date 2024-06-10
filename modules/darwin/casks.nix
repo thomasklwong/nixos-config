@@ -40,6 +40,7 @@ _:
   "pgadmin4"
   "porting-kit"
   "postman"
+  "raycast"
   "rectangle"
   "signal"
   "slack"
