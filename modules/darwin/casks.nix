@@ -37,6 +37,7 @@ _:
   "nordvpn"
   "notunes"
   "obsidian"
+  "ollama"
   "pgadmin4"
   "porting-kit"
   "postman"

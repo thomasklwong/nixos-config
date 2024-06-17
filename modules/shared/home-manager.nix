@@ -33,6 +33,7 @@ let name = "Thomas Wong";
       fi
 
       # Define variables for directories
+      export PATH=/opt/homebrew/bin:$PATH
       export PATH=$HOME/.pnpm-packages/bin:$HOME/.pnpm-packages:$PATH
       export PATH=$HOME/.npm-packages/bin:$HOME/bin:$PATH
       export PATH=$HOME/.local/share/bin:$PATH
