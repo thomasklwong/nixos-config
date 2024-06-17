@@ -37,12 +37,8 @@ let user = "thomas"; in
     zsh.enable = true;
   };
 
-  # Turn off NIX_PATH warnings now that we're using flakes
-  system.checks.verifyNixPath = false;
-
   # Load configuration that is shared across systems
   environment.systemPackages = with pkgs; [
-    # emacs-unstable
     agenix.packages."${pkgs.system}".default
   ] ++ (import ../../modules/shared/packages.nix { inherit pkgs; });
 
@@ -55,20 +51,13 @@ let user = "thomas"; in
   # Enable fonts dir
   fonts.fontDir.enable = true;
 
-  # launchd.user.agents.emacs.path = [ config.environment.systemPath ];
-  # launchd.user.agents.emacs.serviceConfig = {
-  #   KeepAlive = true;
-  #   ProgramArguments = [
-  #     "/bin/sh"
-  #     "-c"
-  #     "/bin/wait4path ${pkgs.emacs}/bin/emacs && exec ${pkgs.emacs}/bin/emacs --fg-daemon"
-  #   ];
-  #   StandardErrorPath = "/tmp/emacs.err.log";
-  #   StandardOutPath = "/tmp/emacs.out.log";
-  # };
-
   system = {
     stateVersion = 4;
+
+    checks = {
+      # Turn off NIX_PATH warnings now that we're using flakes
+      verifyNixPath = false;
+    };
 
     defaults = {
       ActivityMonitor = {
@@ -78,30 +67,30 @@ let user = "thomas"; in
         SortDirection = 0;
       };
 
+      CustomSystemPreferences = {};
+
+      CustomUserPreferences = {};
+
       LaunchServices.LSQuarantine = false;
 
       NSGlobalDomain = {
-        NSDocumentSaveNewDocumentsToCloud = false;
+        AppleICUForce24HourTime = true;
         AppleInterfaceStyleSwitchesAutomatically = true;
-        AppleWindowTabbingMode = "fullscreen";
+        AppleScrollerPagingBehavior = true;
+        AppleWindowTabbingMode = "always";
+        NSDocumentSaveNewDocumentsToCloud = false;
+        PMPrintingExpandedStateForPrint = true;
+        PMPrintingExpandedStateForPrint2 = true;
       };
 
-      # Not in default
-      # NSToolbarTitleViewRolloverDelay = 0;
-
-      # "com.apple.finder._FXSortFoldersFirst" = true;
-      # "com.apple.finder.FXRemoveOldTrashItems" = true;
-      # "com.apple.finder._FXSortFoldersFirstOnDesktop" = true;
-      # "com.apple.finder.ShowExternalHardDrivesOnDesktop" = false;
-      # "com.apple.finder.ShowRemovableMediaOnDesktop" = false;
-
-      # "com.apple.menuextra.clock.FlashDateSeparators" = true;
-
-      # "com.apple.HIToolbox.AppleFnUsageType" = 3;
-
-      # "com.apple.mouse.tapBehavior" = 1;
-
       SoftwareUpdate.AutomaticallyInstallMacOSUpdates = true;
+      loginwindow.GuestEnabled = false;
+
+      # Firewall
+      alf = {
+        allowdownloadsignedenabled = 1;
+        allowsignedenabled = 1;
+      };
 
       dock = {
         autohide = true;
@@ -121,13 +110,13 @@ let user = "thomas"; in
         ShowPathbar = true;
       };
 
-      loginwindow = {
-        GuestEnabled = false;
-      };
-
       menuExtraClock = {
         Show24Hour = true;
         ShowAMPM = false;
+        # Always
+        ShowDate = 1;
+        ShowDayOfMonth = true;
+        ShowDayOfWeek = true;
         ShowSeconds = true;
       };
 
@@ -140,6 +129,21 @@ let user = "thomas"; in
         Clicking = true;
         TrackpadThreeFingerDrag = true;
       };
+
+      # Not in default
+      # NSToolbarTitleViewRolloverDelay = 0;
+
+      # "com.apple.finder._FXSortFoldersFirst" = true;
+      # "com.apple.finder.FXRemoveOldTrashItems" = true;
+      # "com.apple.finder._FXSortFoldersFirstOnDesktop" = true;
+      # "com.apple.finder.ShowExternalHardDrivesOnDesktop" = false;
+      # "com.apple.finder.ShowRemovableMediaOnDesktop" = false;
+
+      # "com.apple.menuextra.clock.FlashDateSeparators" = true;
+
+      # "com.apple.HIToolbox.AppleFnUsageType" = 3;
+
+      # "com.apple.mouse.tapBehavior" = 1;   
     };
   };
 }
