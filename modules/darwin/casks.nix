@@ -38,6 +38,7 @@ _:
   "notunes"
   "obsidian"
   "ollama"
+  "ollamac"
   "pgadmin4"
   "porting-kit"
   "postman"
