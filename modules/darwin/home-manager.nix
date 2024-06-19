@@ -41,17 +41,21 @@ in
       ];
     };
 
+    # Unfortunately, this still failed to upgrade the masApps.
     masApps = {
+      # "iMovie" = 408981434;
+      "Keynote" = 409183694;
+      "Pages" = 409201541;
+      "Numbers" = 409203825;
+      "Disk Speed Test" = 425264550;
+      "Xcode" = 497799835;
+      "LINE" = 539883307;
+      "GarageBand" = 682658836;
+      "GoPro Player" = 1460836908;
       "HP Smart" = 1474276998;
       "1Password for Safari" = 1569813296;
-      # "iMovie" = 408981434;
-      # "Pages" = 409201541;
-      "Disk Speed Test" = 425264550;
-      # "Keynote" = 409183694;
-      "Xcode" = 497799835;
-      "GoPro Player" = 1460836908;
-      "LINE" = 539883307;
-      # "Numbers" = 409203825;
+      "Wireless@SGx" = 1449928544;
+      #"Enchanted LLM" = 6474268307;
     };
   };
 
