@@ -69,7 +69,16 @@ let user = "thomas"; in
 
       CustomSystemPreferences = {};
 
-      CustomUserPreferences = {};
+      CustomUserPreferences = {
+        "com.apple.finder" = {
+          ShowExternalHardDrivesOnDesktop = false;
+          ShowRemovableMediaOnDesktop = false;
+        };
+
+        "com.apple.menuextra.clock" = {
+          FlashDateSeparators = true;
+        };
+      };
 
       LaunchServices.LSQuarantine = false;
 
@@ -129,21 +138,6 @@ let user = "thomas"; in
         Clicking = true;
         TrackpadThreeFingerDrag = true;
       };
-
-      # Not in default
-      # NSToolbarTitleViewRolloverDelay = 0;
-
-      # "com.apple.finder._FXSortFoldersFirst" = true;
-      # "com.apple.finder.FXRemoveOldTrashItems" = true;
-      # "com.apple.finder._FXSortFoldersFirstOnDesktop" = true;
-      # "com.apple.finder.ShowExternalHardDrivesOnDesktop" = false;
-      # "com.apple.finder.ShowRemovableMediaOnDesktop" = false;
-
-      # "com.apple.menuextra.clock.FlashDateSeparators" = true;
-
-      # "com.apple.HIToolbox.AppleFnUsageType" = 3;
-
-      # "com.apple.mouse.tapBehavior" = 1;   
     };
   };
 }
