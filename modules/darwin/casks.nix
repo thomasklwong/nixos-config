@@ -13,6 +13,7 @@ _:
   # Find out how
   # "canon-ufrii-driver"
   "charles"
+  "chatgpt"
   # Slow install
   "coconutbattery"
   "disk-drill"
@@ -42,6 +43,7 @@ _:
   "pgadmin4"
   "porting-kit"
   "postman"
+  "protonvpn"
   "raycast"
   "rectangle"
   "signal"
