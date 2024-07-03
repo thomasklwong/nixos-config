@@ -27,6 +27,7 @@ with pkgs; [
   nodejs
   python3
   qemu
+  mise
   ripgrep
   sqlite
   streamlink

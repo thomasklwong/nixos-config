@@ -34,7 +34,6 @@ _:
   "macs-fan-control"
   "microsoft-edge"
   "mullvad-browser"
-  "nordlayer"
   "nordvpn"
   "notunes"
   "obsidian"
