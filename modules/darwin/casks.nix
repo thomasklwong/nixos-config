@@ -50,7 +50,7 @@ _:
   "spotify"
   "tailscale"
   "teamviewer"
-  "temurin"
+  "temurin@21"
   "telegram"
   "the-unarchiver"
   "ui"
