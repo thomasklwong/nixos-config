@@ -44,6 +44,10 @@ with pkgs; [
   cdxgen
   trivy
   syft
+  license-scanner
+  askalono
+  licensee
+
 
   # bash-completion
   # neofetch
