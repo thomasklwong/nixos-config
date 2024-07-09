@@ -21,5 +21,5 @@ plugin_autoupdate_last_check_duration = '1 day'
 
 # Config files with this prefix will be trusted by default
 trusted_config_paths = [
-    '~/src`
+    '~/src'
 ]

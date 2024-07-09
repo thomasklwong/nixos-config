@@ -62,10 +62,8 @@ let name = "Thomas Wong";
 
       # Always color ls and group directories
       alias ls='ls --color=auto'
-    '';
 
-    initExtra = ''
-      eval "$(~/.local/bin/mise activate zsh)"'
+      eval "$(mise activate)"
     '';
   };
 
