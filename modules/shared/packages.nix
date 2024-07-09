@@ -12,7 +12,6 @@ with pkgs; [
   bat
   btop
   cabextract
-  cdxgen
   colima
   coreutils
   devenv
@@ -40,6 +39,10 @@ with pkgs; [
   # Node.js and related global setup
   nodejs
   corepack
+
+  # Scanner
+  cdxgen
+  trivy
 
   # bash-completion
   # neofetch
