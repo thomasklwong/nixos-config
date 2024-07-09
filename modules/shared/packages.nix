@@ -43,6 +43,7 @@ with pkgs; [
   # Scanner
   cdxgen
   trivy
+  syft
 
   # bash-completion
   # neofetch
