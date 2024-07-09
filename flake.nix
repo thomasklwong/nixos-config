@@ -4,6 +4,7 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     agenix.url = "github:ryantm/agenix";
     home-manager.url = "github:nix-community/home-manager";
+    nix-homebrew.url = "github:zhaofengli-wip/nix-homebrew";
 
     _1password-shell-plugins.url = "github:1Password/shell-plugins";
 
@@ -11,39 +12,40 @@
       url = "github:LnL7/nix-darwin/master";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    nix-homebrew = {
-      url = "github:zhaofengli-wip/nix-homebrew";
+
+    brew-nix = {
+      url = "github:BatteredBunny/brew-nix";
+      inputs.brew-api.follows = "brew-api";
+    };
+    brew-api = {
+      url = "github:BatteredBunny/brew-api";
+      flake = false;
+    };
+
+    homebrew-core = {
+      url = "github:homebrew/homebrew-core";
+      flake = false;
     };
     homebrew-bundle = {
       url = "github:homebrew/homebrew-bundle";
       flake = false;
     };
-    homebrew-core = {
-      url = "github:homebrew/homebrew-core";
-      flake = false;
-    };
     homebrew-cask = {
       url = "github:homebrew/homebrew-cask";
       flake = false;
-    }; 
-    # majd-ipatool = {
-    #  url = "github:majd/ipatool";
-    #  flake = false;
-    # };
-    # hashicorp = {
-    #  url = "github:hashicorp/homebrew-tap";
-    #  flake = false;
-    # };
+    };
+
     disko = {
       url = "github:nix-community/disko";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
     # secrets = {
     #  url = "git+ssh://git@github.com/thomasklwong/nix-secrets.git";
     #  flake = false;
     # };
   };
-  outputs = { self, darwin, nix-homebrew, homebrew-bundle, homebrew-core, homebrew-cask, /* majd-ipatool, hashicorp, */ home-manager, nixpkgs, disko, agenix, /* secrets */ ... } @inputs:
+  outputs = { self, darwin, nix-homebrew, homebrew-bundle, homebrew-core, homebrew-cask, home-manager, nixpkgs, disko, agenix, /* secrets */ ... } @inputs:
     let
       user = "thomas";
       linuxSystems = [ "x86_64-linux" "aarch64-linux" ];
