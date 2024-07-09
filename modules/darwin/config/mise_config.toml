@@ -1,0 +1,25 @@
+# See https://mise.jdx.dev/configuration.html
+
+[tools]
+
+# set with `mise use -g`
+# node = 'lts'
+# python = ['3.12']
+# go = '1.22'
+# java = ['22','21']
+# ruby = '3.3'
+# bun = 'latest'
+# deno = 'latest'
+
+[settings]
+
+# Enable support of .nvmrc and other non-mise ones.
+legacy_version_file = true
+legacy_version_file_disable_tools = []
+
+plugin_autoupdate_last_check_duration = '1 day'
+
+# Config files with this prefix will be trusted by default
+trusted_config_paths = [
+    # '~/src`
+]

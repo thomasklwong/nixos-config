@@ -24,5 +24,9 @@ let
    "${xdg_configHome}/syft/config.yaml" = {
       text = builtins.readFile ../darwin/config/syft_config.yaml;
    };
+
+   "${xdg_configHome}/mise/config.toml" = {
+      text = builtins.readFile ../darwin/config/mise_config.toml;
+   };
 }
  
