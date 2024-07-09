@@ -26,6 +26,7 @@ let name = "Thomas Wong";
       #     file = "p10k.zsh";
       # }
     ];
+
     initExtraFirst = ''
       if [[ -f /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh ]]; then
         . /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh
@@ -33,10 +34,12 @@ let name = "Thomas Wong";
       fi
 
       # Define variables for directories
+      # This will be last added path
       export PATH=/opt/homebrew/bin:$PATH
       export PATH=$HOME/.pnpm-packages/bin:$HOME/.pnpm-packages:$PATH
       export PATH=$HOME/.npm-packages/bin:$HOME/bin:$PATH
       export PATH=$HOME/.local/share/bin:$PATH
+      # This will be first added path
 
       # Remove history data we don't want to see
       export HISTIGNORE="pwd:ls:cd"
@@ -48,10 +51,6 @@ let name = "Thomas Wong";
       # export ALTERNATE_EDITOR=""
       # export EDITOR="emacsclient -t"
       # export VISUAL="emacsclient -c -a emacs"
-
-      # e() {
-      #     emacsclient -t "$@"
-      # }
 
       # nix shortcuts
       shell() {
@@ -85,69 +84,4 @@ let name = "Thomas Wong";
       # rebase.autoStash = true;
     };
   };
-
-  # alacritty = {
-  #   enable = true;
-  #   settings = {
-  #     cursor = {
-  #       style = "Block";
-  #     };
-
-  #     window = {
-  #       opacity = 1.0;
-  #       padding = {
-  #         x = 24;
-  #         y = 24;
-  #       };
-  #     };
-
-#       font = {
-#         normal = {
-#           # family = "MesloLGS NF";
-#           # style = "Regular";
-#         };
-#         size = lib.mkMerge [
-#           (lib.mkIf pkgs.stdenv.hostPlatform.isLinux 10)
-#           (lib.mkIf pkgs.stdenv.hostPlatform.isDarwin 14)
-#         ];
-#       };
-# 
-#       dynamic_padding = true;
-#       decorations = "full";
-#       title = "Terminal";
-#       class = {
-#         instance = "Alacritty";
-#         general = "Alacritty";
-#       };
-# 
-#       colors = {
-#         primary = {
-#           background = "0x1f2528";
-#           foreground = "0xc0c5ce";
-#         };
-# 
-#         normal = {
-#           black = "0x1f2528";
-#           red = "0xec5f67";
-#           green = "0x99c794";
-#           yellow = "0xfac863";
-#           blue = "0x6699cc";
-#           magenta = "0xc594c5";
-#           cyan = "0x5fb3b3";
-#           white = "0xc0c5ce";
-#         };
-# 
-#         bright = {
-#           black = "0x65737e";
-#           red = "0xec5f67";
-#           green = "0x99c794";
-#           yellow = "0xfac863";
-#           blue = "0x6699cc";
-#           magenta = "0xc594c5";
-#           cyan = "0x5fb3b3";
-#           white = "0xd8dee9";
-#         };
-#       };
-#     };
-#   };
 }
