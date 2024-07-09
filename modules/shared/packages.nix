@@ -36,17 +36,6 @@ with pkgs; [
   xz
   yt-dlp
 
-  # Build node dependencies
-  pkg-config
-  cairo
-  pango
-  libpng
-  libjpeg
-  giflib
-  librsvg
-  pixman
-  python312Packages.setuptools
-
   # Node.js and related global setup
   # nodejs
   # corepack
