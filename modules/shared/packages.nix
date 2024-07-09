@@ -12,6 +12,7 @@ with pkgs; [
   bat
   btop
   cabextract
+  cdxgen
   colima
   coreutils
   devenv
@@ -24,7 +25,6 @@ with pkgs; [
   jq
   killall
   lz4
-  nodejs
   python3
   qemu
   mise
@@ -36,6 +36,10 @@ with pkgs; [
   watch
   xz
   yt-dlp
+
+  # Node.js and related global setup
+  nodejs
+  corepack
 
   # bash-completion
   # neofetch
