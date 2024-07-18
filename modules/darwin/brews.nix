@@ -5,6 +5,7 @@ _:
     #"terraform"
     "tsduck"
 
+    # node canvas
     "pkg-config"
     "cairo"
     "pango"
@@ -14,4 +15,7 @@ _:
     "librsvg"
     "pixman" 
     "python-setuptools"
+
+    # ruby
+    "ruby-build"
 ]
