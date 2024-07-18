@@ -12,8 +12,10 @@ with pkgs; [
   bat
   btop
   cabextract
+  cloc
   colima
   coreutils
+  curlFull
   devenv
   docker
   docker-compose
