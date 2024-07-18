@@ -47,7 +47,8 @@ with pkgs; [
   license-scanner
   askalono
   licensee
-
+  cyclonedx-cli
+  sbom-utility
 
   # bash-completion
   # neofetch
