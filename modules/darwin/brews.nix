@@ -5,6 +5,9 @@ _:
     #"terraform"
     "tsduck"
 
+    # specifically for gsed instead of nix's gnu-sed
+    "gnu-sed"
+
     # node canvas
     "pkg-config"
     "cairo"
