@@ -24,6 +24,7 @@ with pkgs; [
   jq
   killall
   lz4
+  pandoc
   python3
   qemu
   mise
@@ -31,6 +32,7 @@ with pkgs; [
   sqlite
   streamlink
   tailscale
+  texliveSmall
   tree
   watch
   xz
