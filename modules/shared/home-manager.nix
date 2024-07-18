@@ -33,8 +33,13 @@ let name = "Thomas Wong";
         . /nix/var/nix/profiles/default/etc/profile.d/nix.sh
       fi
 
+      export ANDROID_HOME=$HOME/Library/Android/sdk
+
       # Define variables for directories
       # This will be last added path
+      export PATH=$ANDROID_HOME/tools:$PATH
+      export PATH=$ANDROID_HOME/tools/bin:$PATH
+      export PATH=$ANDROID_HOME/platform-tools:$PATH
       export PATH=/opt/homebrew/bin:$PATH
       export PATH=$HOME/.pnpm-packages/bin:$HOME/.pnpm-packages:$PATH
       export PATH=$HOME/.npm-packages/bin:$HOME/bin:$PATH
