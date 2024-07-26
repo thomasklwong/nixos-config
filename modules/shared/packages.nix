@@ -41,8 +41,8 @@ with pkgs; [
   yt-dlp
 
   # Node.js and related global setup
-  # nodejs
-  # corepack
+  nodejs
+  corepack
 
   # Scanner
   cdxgen
