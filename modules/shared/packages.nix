@@ -42,7 +42,7 @@ with pkgs; [
 
   # Node.js and related global setup
   nodejs
-  corepack
+  #corepack
 
   # Scanner
   cdxgen

@@ -1,5 +1,8 @@
 # See https://mise.jdx.dev/configuration.html
 
+[env]
+MISE_NODE_COREPACK = 'true'
+
 [tools]
 
 # set with `mise use -g`
