@@ -83,7 +83,7 @@ let name = "Thomas Wong";
     extraConfig = {
       init.defaultBranch = "main";
       # core = {
-	      # editor = "vim";
+        # editor = "vim";
         # autocrlf = "input";
       # };
       # commit.gpgsign = true;

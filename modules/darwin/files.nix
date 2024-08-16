@@ -1,5 +1,5 @@
 { user, config, pkgs, ... }:
- 
+
 let
    xdg_configHome = "${config.users.users.${user}.home}/.config";
    xdg_dataHome   = "${config.users.users.${user}.home}/.local/share";
@@ -29,4 +29,3 @@ let
       text = builtins.readFile ../darwin/config/mise_config.toml;
    };
 }
- 

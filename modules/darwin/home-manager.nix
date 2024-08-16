@@ -12,7 +12,7 @@ let
 in
 {
   imports = [
-   ./dock
+    ./dock
   ];
 
   # It me
@@ -131,7 +131,7 @@ in
         #  section = "others";
         #  options = "--sort name --view grid --display stack";
         #}
-       ];
-     };
-   };
+      ];
+    };
+  };
 }
