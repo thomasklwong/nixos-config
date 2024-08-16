@@ -97,6 +97,7 @@ in
         { path = "/Applications/Floorp.app/"; }
         { path = "/Applications/Firefox.app/"; }
         { path = "/Applications/Firefox Developer Edition.app/"; }
+        { path = "/Applications/Firefox Nightly.app/"; }
         { path = "/Applications/Google Chrome.app/"; }
         { path = "/Applications/Google Chrome Beta.app/"; }
         { path = "/Applications/Google Chrome Canary.app/"; }
@@ -107,6 +108,7 @@ in
         { path = "/Applications/Safari.app/"; }
         { path = "/Applications/1Password.app/"; }
         { path = "/Applications/Alacritty.app/"; }
+        { path = "/Applications/WezTerm.app/"; }
         { path = "/Applications/GitHub Desktop.app/"; }
         { path = "/Applications/Obsidian.app/"; }
         { path = "/Applications/Visual Studio Code.app/"; }
