@@ -22,5 +22,6 @@ _:
     # ruby
     "ruby-build"
 
+    "awscli"
     "hashicorp/tap/terraform"
 ]
