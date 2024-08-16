@@ -21,4 +21,6 @@ _:
 
     # ruby
     "ruby-build"
+
+    "hashicorp/tap/terraform"
 ]

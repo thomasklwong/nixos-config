@@ -35,6 +35,11 @@
       flake = false;
     };
 
+    hashicorp-homebrew-tap = {
+      url = "github:hashicorp/homebrew-tap";
+      flake = false;
+    };
+
     disko = {
       url = "github:nix-community/disko";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -45,7 +50,20 @@
     #  flake = false;
     # };
   };
-  outputs = { self, darwin, nix-homebrew, homebrew-bundle, homebrew-core, homebrew-cask, home-manager, nixpkgs, disko, agenix, /* secrets */ ... } @inputs:
+  outputs = { 
+    self, 
+    darwin, 
+    nix-homebrew, 
+    homebrew-bundle, 
+    homebrew-core, 
+    homebrew-cask, 
+    hashicorp-homebrew-tap, 
+    home-manager, 
+    nixpkgs, 
+    disko, 
+    agenix, 
+    /* secrets */ ... 
+  } @inputs:
     let
       user = "thomas";
       linuxSystems = [ "x86_64-linux" "aarch64-linux" ];
@@ -107,6 +125,7 @@
                   "homebrew/homebrew-core" = homebrew-core;
                   "homebrew/homebrew-cask" = homebrew-cask;
                   "homebrew/homebrew-bundle" = homebrew-bundle;
+                  "hashicorp/homebrew-tap" = hashicorp-homebrew-tap;
                 };
                 mutableTaps = false;
                 autoMigrate = true;
