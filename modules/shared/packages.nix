@@ -23,6 +23,7 @@ with pkgs; [
   ffmpeg
   fzf
   htop
+  inetutils
   jq
   killall
   lz4
@@ -30,6 +31,7 @@ with pkgs; [
   python3
   qemu
   mise
+  nmap
   ripgrep
   sqlite
   streamlink
