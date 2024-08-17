@@ -5,7 +5,7 @@ let name = "Thomas Wong";
     email = "1935201+thomasklwong@users.noreply.github.com"; in
 {
   _1password-shell-plugins = {
-    enable = true;
+    enable = false;
     plugins = with pkgs; [gh awscli2];
   };
 
