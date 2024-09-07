@@ -21,6 +21,7 @@ _:
   "firefox@developer-edition"
   "firefox@nightly"
   "floorp"
+  "fork"
   "github@beta"
   "google-chrome"
   "google-chrome@beta"

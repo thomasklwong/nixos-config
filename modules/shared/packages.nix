@@ -17,12 +17,14 @@ with pkgs; [
   coreutils
   curlFull
   devenv
+  difftastic
   docker
   docker-compose
   fd
   ffmpeg
   fzf
   htop
+  imagemagickBig
   inetutils
   jq
   killall
