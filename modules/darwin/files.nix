@@ -28,4 +28,8 @@ let
    "${xdg_configHome}/mise/config.toml" = {
       text = builtins.readFile ../darwin/config/mise_config.toml;
    };
+
+   "${xdg_configHome}/wezterm/wezterm.lua" = {
+      text = builtins.readFile ../darwin/config/wezterm.lua;
+   };
 }
