@@ -86,7 +86,6 @@ let user = "thomas"; in
         AppleICUForce24HourTime = true;
         AppleInterfaceStyleSwitchesAutomatically = true;
         AppleScrollerPagingBehavior = true;
-        AppleWindowTabbingMode = "always";
         NSDocumentSaveNewDocumentsToCloud = false;
         PMPrintingExpandedStateForPrint = true;
         PMPrintingExpandedStateForPrint2 = true;
