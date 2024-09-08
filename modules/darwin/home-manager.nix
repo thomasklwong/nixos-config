@@ -107,9 +107,8 @@ in
         { path = "/Applications/Mullvad Browser.app/"; }
         { path = "/Applications/Safari.app/"; }
         { path = "/Applications/1Password.app/"; }
-        { path = "/Applications/Alacritty.app/"; }
         { path = "/Applications/WezTerm.app/"; }
-        { path = "/Applications/GitHub Desktop.app/"; }
+        { path = "/Applications/Fork.app/"; }
         { path = "/Applications/Obsidian.app/"; }
         { path = "/Applications/Visual Studio Code.app/"; }
         {
