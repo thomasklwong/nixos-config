@@ -4,11 +4,6 @@ let name = "Thomas Wong";
     user = "thomas";
     email = "1935201+thomasklwong@users.noreply.github.com"; in
 {
-  _1password-shell-plugins = {
-    enable = false;
-    plugins = with pkgs; [gh awscli2];
-  };
-
   # Shared shell configuration
   zsh = {
     enable = true;
@@ -51,11 +46,6 @@ let name = "Thomas Wong";
 
       # Ripgrep alias
       alias search=rg -p --glob '!node_modules/*'  $@
-
-      # Emacs is my editor
-      # export ALTERNATE_EDITOR=""
-      # export EDITOR="emacsclient -t"
-      # export VISUAL="emacsclient -c -a emacs"
 
       # nix shortcuts
       shell() {

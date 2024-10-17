@@ -14,4 +14,3 @@
 #     text = builtins.readFile ../shared/config/emacs/init.el;
 #   };
 }
- 

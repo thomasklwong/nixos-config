@@ -3,7 +3,6 @@ _:
 [
   "1password"
   "adobe-digital-editions"
-  "alacritty"
   "android-studio"
   "appcleaner"
   "brave-browser"

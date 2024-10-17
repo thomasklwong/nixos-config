@@ -17,10 +17,6 @@ let
       text = builtins.readFile ../darwin/config/RectangleConfig.json;
    };
 
-   "${xdg_configHome}/alacritty/alacritty.toml" = {
-      text = builtins.readFile ../darwin/config/alacritty.toml;
-   };
-
    "${xdg_configHome}/syft/config.yaml" = {
       text = builtins.readFile ../darwin/config/syft_config.yaml;
    };
