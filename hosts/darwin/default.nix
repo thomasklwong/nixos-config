@@ -48,9 +48,6 @@ let user = "thomas"; in
   # This does not work. Need to manually fix it.
   users.users.thomas.shell = pkgs.zsh;
 
-  # Enable fonts dir
-  fonts.fontDir.enable = true;
-
   system = {
     stateVersion = 4;
 
