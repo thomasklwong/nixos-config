@@ -499,7 +499,24 @@
         "homebrew-cask": "homebrew-cask",
         "homebrew-core": "homebrew-core",
         "nix-homebrew": "nix-homebrew",
-        "nixpkgs": "nixpkgs_7"
+        "nixpkgs": "nixpkgs_7",
+        "statping-tap": "statping-tap"
+      }
+    },
+    "statping-tap": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1698369908,
+        "narHash": "sha256-eEFyG1hDt4XZvO1lny3j5ZJSYOGqM4/uyvLW3bsPCG8=",
+        "owner": "statping",
+        "repo": "statping",
+        "rev": "fd889a14c0cdb66edbb1cc7a7e973ca791eba5da",
+        "type": "github"
+      },
+      "original": {
+        "owner": "statping",
+        "repo": "statping",
+        "type": "github"
       }
     },
     "systems": {

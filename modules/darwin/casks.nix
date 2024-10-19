@@ -31,7 +31,6 @@ _:
   "iina"
   "keka"
   "kindle-previewer"
-  "logi-options-plus"
   "macs-fan-control"
   "microsoft-edge"
   "mullvad-browser"

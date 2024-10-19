@@ -45,6 +45,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    statping-tap = {
+      url = "github:statping/statping";
+      flake = false;
+    };
+
     # secrets = {
     #  url = "git+ssh://git@github.com/thomasklwong/nix-secrets.git";
     #  flake = false;
@@ -61,6 +66,7 @@
     home-manager, 
     nixpkgs, 
     disko, 
+    statping-tap,
     agenix, 
     /* secrets */ ... 
   } @inputs:
@@ -126,6 +132,7 @@
                   "homebrew/homebrew-cask" = homebrew-cask;
                   "homebrew/homebrew-bundle" = homebrew-bundle;
                   "hashicorp/homebrew-tap" = hashicorp-homebrew-tap;
+                  "statping/homebrew-statping" = statping-tap;
                 };
                 mutableTaps = false;
                 autoMigrate = true;
