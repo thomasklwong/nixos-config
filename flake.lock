@@ -506,16 +506,16 @@
     "statping-tap": {
       "flake": false,
       "locked": {
-        "lastModified": 1698369908,
-        "narHash": "sha256-eEFyG1hDt4XZvO1lny3j5ZJSYOGqM4/uyvLW3bsPCG8=",
+        "lastModified": 1591863465,
+        "narHash": "sha256-o39dLc3W6LMOzuaXw7T6tLd/PYV00w6ll53P6KZYB04=",
         "owner": "statping",
-        "repo": "statping",
-        "rev": "fd889a14c0cdb66edbb1cc7a7e973ca791eba5da",
+        "repo": "homebrew-statping",
+        "rev": "5b6643c22889b49a5e0652cf5ef95d774ee68c7c",
         "type": "github"
       },
       "original": {
         "owner": "statping",
-        "repo": "statping",
+        "repo": "homebrew-statping",
         "type": "github"
       }
     },

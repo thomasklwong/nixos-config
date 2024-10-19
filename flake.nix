@@ -46,7 +46,7 @@
     };
 
     statping-tap = {
-      url = "github:statping/statping";
+      url = "github:statping/homebrew-statping";
       flake = false;
     };
 
