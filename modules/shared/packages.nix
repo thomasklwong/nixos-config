@@ -10,6 +10,7 @@ with pkgs; [
   aspellDicts.en
   awscli2
   bat
+  bento4
   btop
   cabextract
   cloc
