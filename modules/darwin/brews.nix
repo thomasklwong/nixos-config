@@ -25,5 +25,5 @@ _:
     "awscli"
     "hashicorp/tap/terraform"
 
-    "statping"
+    "you-get"
 ]
