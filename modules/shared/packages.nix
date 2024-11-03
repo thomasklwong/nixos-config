@@ -59,6 +59,9 @@ with pkgs; [
   cyclonedx-cli
   sbom-utility
 
+  fclones
+  rsync
+
   # bash-completion
   # neofetch
   # openssh

@@ -66,6 +66,7 @@ _:
   "xquartz"
   "yam-display"
   "zenmap"
+  "rsyncui"
 
   # "homebrew/cask/docker"
   # "syncthing"
