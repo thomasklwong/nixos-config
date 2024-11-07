@@ -46,7 +46,7 @@ let user = "thomas"; in
     shells = [ pkgs.bashInteractive pkgs.zsh ];
   };
   # This does not work. Need to manually fix it.
-  users.users.thomas.shell = pkgs.zsh;
+  # users.users.thomas.shell = pkgs.zsh;
 
   system = {
     stateVersion = 4;

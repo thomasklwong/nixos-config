@@ -50,7 +50,7 @@ with pkgs; [
   #corepack
 
   # Scanner
-  cdxgen
+  # cdxgen
   trivy
   syft
   license-scanner
