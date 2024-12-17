@@ -4,7 +4,7 @@ with pkgs; [
   # Cannot use 1password via Nix App it seems
   # as it will complain it is not installed
   # at /Application
-  _1password
+  _1password-cli
   age
   aspell
   aspellDicts.en
@@ -34,7 +34,9 @@ with pkgs; [
   python3
   qemu
   mise
+  mkcert
   nmap
+  nss_latest
   ripgrep
   sqlite
   streamlink
