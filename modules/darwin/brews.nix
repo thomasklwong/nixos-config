@@ -1,10 +1,5 @@
 _:
 [
-    # "majd/repo/ipatool"
-    "code-cli"
-    #"terraform"
-    "tsduck"
-
     # specifically for gsed instead of nix's gnu-sed
     "gnu-sed"
 
@@ -19,11 +14,11 @@ _:
     "pixman" 
     "python-setuptools"
 
-    # ruby
-    "ruby-build"
-
-    "awscli"
+    "code-cli"
     "hashicorp/tap/terraform"
+    "ruby-build"
+    "tsduck"
 
+    # "majd/repo/ipatool"
     "you-get"
 ]

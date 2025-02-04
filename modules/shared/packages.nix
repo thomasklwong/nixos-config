@@ -29,6 +29,7 @@ with pkgs; [
   inetutils
   jq
   killall
+  llama-cpp
   lz4
   pandoc
   python3
@@ -49,7 +50,10 @@ with pkgs; [
 
   # Node.js and related global setup
   nodejs
-  #corepack
+  # Node.js development tools
+  # nodePackages.npm # globally install npm
+  # nodePackages.prettier
+  # nodejs
 
   # Scanner
   # cdxgen
@@ -84,11 +88,6 @@ with pkgs; [
   # noto-fonts
   # noto-fonts-emoji
   # meslo-lgs-nf
-
-  # Node.js development tools
-  # nodePackages.npm # globally install npm
-  # nodePackages.prettier
-  # nodejs
 
   # Text and terminal utilities
   # hunspell

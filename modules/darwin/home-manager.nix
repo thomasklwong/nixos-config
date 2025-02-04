@@ -55,7 +55,6 @@ in
       "HP Smart" = 1474276998;
       "1Password for Safari" = 1569813296;
       "Wireless@SGx" = 1449928544;
-      #"Enchanted LLM" = 6474268307;
     };
   };
 
@@ -116,20 +115,6 @@ in
           section = "others";
           options = "--sort name --view grid --display stack";
         }
-        #{
-        #  path = toString myEmacsLauncher;
-        #  section = "others";
-        #}
-        #{
-        #  path = "${config.users.users.${user}.home}/.local/share/";
-        #  section = "others";
-        #  options = "--sort name --view grid --display folder";
-        #}
-        #{
-        #  path = "${config.users.users.${user}.home}/.local/share/downloads";
-        #  section = "others";
-        #  options = "--sort name --view grid --display stack";
-        #}
       ];
     };
   };
