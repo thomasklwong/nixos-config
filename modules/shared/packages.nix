@@ -24,6 +24,7 @@ with pkgs; [
   fd
   ffmpeg
   fzf
+  gh
   htop
   imagemagickBig
   inetutils
