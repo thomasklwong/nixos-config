@@ -18,6 +18,7 @@ _:
     "hashicorp/tap/terraform"
     "ruby-build"
     "tsduck"
+    "ramalama"
 
     # "majd/repo/ipatool"
     "you-get"
