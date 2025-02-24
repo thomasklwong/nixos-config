@@ -57,6 +57,7 @@ _:
   "utm"
   "visual-studio-code"
   "vlc"
+  "vnc-viewer"
   "vysor"
   "wezterm"
   "wine-stable"
