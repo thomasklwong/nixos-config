@@ -4,7 +4,9 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     agenix.url = "github:ryantm/agenix";
     home-manager.url = "github:nix-community/home-manager";
-    nix-homebrew.url = "github:zhaofengli-wip/nix-homebrew";
+    # Wait until it merge
+    # nix-homebrew.url = "github:zhaofengli-wip/nix-homebrew";
+    nix-homebrew.url = "git+https://github.com/zhaofengli/nix-homebrew?ref=refs/pull/71/merge";
 
     _1password-shell-plugins.url = "github:1Password/shell-plugins";
 
