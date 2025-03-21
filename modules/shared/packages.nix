@@ -46,6 +46,7 @@ with pkgs; [
   texliveSmall
   tree
   watch
+  wkhtmltopdf
   xz
   yt-dlp
 
