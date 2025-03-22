@@ -481,7 +481,8 @@
         "homebrew-cask": "homebrew-cask",
         "homebrew-core": "homebrew-core",
         "nix-homebrew": "nix-homebrew",
-        "nixpkgs": "nixpkgs_7"
+        "nixpkgs": "nixpkgs_7",
+        "tabbyml-homebrew-tabby": "tabbyml-homebrew-tabby"
       }
     },
     "systems": {
@@ -526,6 +527,22 @@
       "original": {
         "owner": "nix-systems",
         "repo": "default",
+        "type": "github"
+      }
+    },
+    "tabbyml-homebrew-tabby": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1742570127,
+        "narHash": "sha256-dYeEF5omDxCaAxHvTmQoaq5RojL5KB68H6dba7oj1Lo=",
+        "owner": "tabbyml",
+        "repo": "homebrew-tabby",
+        "rev": "69952dc964087fac61ed8d03abd056847a7ed8a5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "tabbyml",
+        "repo": "homebrew-tabby",
         "type": "github"
       }
     }
