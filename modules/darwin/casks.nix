@@ -5,6 +5,7 @@ _:
   "adobe-digital-editions"
   "android-studio"
   "appcleaner"
+  "block-goose"
   "brave-browser"
   "brave-browser@beta"
   "bruno"
