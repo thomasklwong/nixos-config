@@ -2,6 +2,7 @@ _:
 [
     # specifically for gsed instead of nix's gnu-sed
     "gnu-sed"
+    "mas"
 
     # node canvas
     "pkg-config"
