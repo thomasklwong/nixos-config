@@ -50,11 +50,11 @@ in
       "Disk Speed Test" = 425264550;
       "Xcode" = 497799835;
       "LINE" = 539883307;
-      "GarageBand" = 682658836;
-      "GoPro Player" = 1460836908;
-      "HP Smart" = 1474276998;
+      # "GarageBand" = 682658836;
+      # "GoPro Player" = 1460836908;
+      # "HP Smart" = 1474276998;
       "1Password for Safari" = 1569813296;
-      "Wireless@SGx" = 1449928544;
+      # "Wireless@SGx" = 1449928544;
     };
   };
 
