@@ -14,7 +14,7 @@ _:
     "pixman" 
     "python-setuptools"
 
-    "code-cli"
+    # "code-cli"
     "hashicorp/tap/terraform"
     "ruby-build"
     "tabbyml/tabby/tabby"
