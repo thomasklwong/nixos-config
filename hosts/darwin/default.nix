@@ -11,6 +11,8 @@ let user = "thomas"; in
     agenix.darwinModules.default
   ];
 
+  ids.gids.nixbld = 350;
+
   # Setup user, packages, programs
   nix = {
     package = pkgs.nix;
