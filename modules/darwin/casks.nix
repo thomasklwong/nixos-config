@@ -5,7 +5,6 @@ _:
   "adobe-digital-editions"
   "android-studio"
   "appcleaner"
-  "block-goose"
   "bruno"
   "caffeine"
   "calibre"
@@ -54,4 +53,14 @@ _:
   "xquartz"
   "yam-display"
   "zenmap"
+
+  "zed"
+
+  # Network
+  "raspberry-pi-imager"
+
+  # AI
+  "pieces"
+  "block-goose"
+  "lm-studio"
 ]
