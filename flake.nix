@@ -39,11 +39,6 @@
       flake = false;
     };
 
-    tabbyml-homebrew-tabby = {
-      url = "github:tabbyml/homebrew-tabby";
-      flake = false;
-    };
-
     disko = {
       url = "github:nix-community/disko";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -64,7 +59,6 @@
     homebrew-core, 
     homebrew-cask, 
     hashicorp-homebrew-tap, 
-    tabbyml-homebrew-tabby,
     home-manager, 
     nixpkgs, 
     disko, 
@@ -133,7 +127,6 @@
                   "homebrew/homebrew-cask" = homebrew-cask;
                   "homebrew/homebrew-bundle" = homebrew-bundle;
                   "hashicorp/homebrew-tap" = hashicorp-homebrew-tap;
-                  "tabbyml/homebrew-tabby" = tabbyml-homebrew-tabby;
                 };
                 mutableTaps = false;
                 autoMigrate = true;
