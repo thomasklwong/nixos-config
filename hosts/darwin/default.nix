@@ -20,7 +20,7 @@ let user = "thomas"; in
     settings = {
       trusted-users = [ "@admin" "${user}" ];
       download-buffer-size = 5368709120;
-    }
+    };
 
     gc = {
       automatic = true;
