@@ -22,7 +22,7 @@ let name = "Thomas Wong";
       # }
     ];
 
-    initExtraFirst = ''
+    initContent = lib.mkBefore ''
       if [[ -f /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh ]]; then
         . /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh
         . /nix/var/nix/profiles/default/etc/profile.d/nix.sh
@@ -45,7 +45,7 @@ let name = "Thomas Wong";
       export HISTIGNORE="pwd:ls:cd"
 
       # Ripgrep alias
-      alias search=rg -p --glob '!node_modules/*'  $@
+      alias search="rg -p --glob '!node_modules/*' "  # Added quotes around the alias command
 
       # nix shortcuts
       shell() {

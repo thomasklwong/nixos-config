@@ -16,7 +16,11 @@ let user = "thomas"; in
   # Setup user, packages, programs
   nix = {
     package = pkgs.nix;
-    settings.trusted-users = [ "@admin" "${user}" ];
+
+    settings = {
+      trusted-users = [ "@admin" "${user}" ];
+      download-buffer-size = 5368709120;
+    }
 
     gc = {
       automatic = true;
@@ -47,6 +51,8 @@ let user = "thomas"; in
   # users.users.thomas.shell = pkgs.zsh;
 
   system = {
+    primaryUser = "thomas";
+
     stateVersion = 4;
 
     checks = {
