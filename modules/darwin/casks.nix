@@ -60,6 +60,7 @@ _:
   "raspberry-pi-imager"
 
   # AI
+  "anythingllm"
   "pieces"
   "block-goose"
   "lm-studio"
