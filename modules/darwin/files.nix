@@ -20,4 +20,8 @@ let
    "${xdg_configHome}/mise/config.toml" = {
       text = builtins.readFile ../darwin/config/mise_config.toml;
    };
+
+   "${xdg_configHome}/ghostty/config" = {
+      text = builtins.readFile ../darwin/config/ghostty_config;
+   };
 }

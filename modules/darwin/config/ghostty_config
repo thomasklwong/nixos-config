@@ -1,0 +1,46 @@
+# Ghostty never say it is a toml file, but easier for syntax highlight if I define so.
+
+font-family = "Menlo"
+alpha-blending = "native"
+
+# theme = "Builtin Pastel Dark"
+# theme = "Dark Modern"
+theme = "Dracula+"
+
+cursor-style = "bar"
+cursor-style-blink = "true"
+cursor-click-to-move = "true"
+mouse-hide-while-typing = "true"
+
+background-opacity= "0.8"
+background-blur = "20"
+unfocused-split-opacity = "0.6"
+
+scrollback-limit = "1073741824"
+
+link-url = "true"
+
+window-colorspace = "display-p3"
+
+clipboard-read = "ask"
+clipboard-write = "ask"
+clipboard-trim-trailing-spaces = "true"
+clipboard-paste-protection = "true"
+clipboard-paste-bracketed-safe = "true"
+copy-on-select = "false"
+
+quit-after-last-window-closed = "true"
+
+shell-integration = "zsh"
+shell-integration-features = cursor, sudo, title
+
+macos-titlebar-style = "transparent"
+macos-option-as-alt = "left"
+macos-auto-secure-input = "true"
+macos-secure-input-indication = "true"
+macos-icon = "microchip"
+
+bold-is-bright = "true"
+term = "xterm"
+auto-update = "check"
+
