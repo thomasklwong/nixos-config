@@ -54,6 +54,11 @@ _:
   "yam-display"
   "zenmap"
 
+  #Browsers
+  # Donut Browser missing
+  # https://github.com/zhom/donutbrowser
+
+  # Editors
   "zed"
 
   # Network
@@ -61,7 +66,8 @@ _:
 
   # AI
   "anythingllm"
-  "pieces"
   "block-goose"
   "lm-studio"
+  # Piece is interesting but used too much memory for good.
+  # "pieces"
 ]
