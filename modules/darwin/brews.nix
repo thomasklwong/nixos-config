@@ -20,6 +20,8 @@ _:
     "tsduck"
     "ramalama"
 
+    "go"
+
     # "majd/repo/ipatool"
     "you-get"
 ]
