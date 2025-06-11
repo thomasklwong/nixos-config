@@ -19,10 +19,10 @@ with pkgs; [
   curlFull
   devenv
   difftastic
-  docker
+  docker_28 # Nix quirk
   docker-compose
   fd
-  ffmpeg
+  ffmpeg-full
   fzf
   gh
   htop
@@ -34,7 +34,7 @@ with pkgs; [
   lz4
   pandoc
   python3
-  qemu
+  qemu_full
   mise
   mkcert
   nmap
