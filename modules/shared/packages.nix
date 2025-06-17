@@ -70,6 +70,8 @@ with pkgs; [
   fclones
   rsync
 
+  n-m3u8dl-re
+
   # bash-completion
   # neofetch
   # openssh
