@@ -28,7 +28,6 @@ _:
   "kindle-previewer"
   "logi-options+"
   "macs-fan-control"
-  "microsoft-edge"
   "nordvpn"
   "notunes"
   "obsidian"

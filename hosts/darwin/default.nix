@@ -50,6 +50,12 @@ let user = "thomas"; in
   # This does not work. Need to manually fix it.
   # users.users.thomas.shell = pkgs.zsh;
 
+  # Firewall
+  networking.applicationFirewall = {
+    allowSignedApp = true;
+    allowSigned = true;
+  };
+
   system = {
     primaryUser = "thomas";
 
@@ -94,12 +100,6 @@ let user = "thomas"; in
 
       SoftwareUpdate.AutomaticallyInstallMacOSUpdates = true;
       loginwindow.GuestEnabled = false;
-
-      # Firewall
-      alf = {
-        allowdownloadsignedenabled = 1;
-        allowsignedenabled = 1;
-      };
 
       dock = {
         autohide = true;

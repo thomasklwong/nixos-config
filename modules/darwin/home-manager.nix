@@ -98,7 +98,6 @@ in
         { path = "/Applications/Google Chrome.app/"; }
         { path = "/Applications/Google Chrome Beta.app/"; }
         { path = "/Applications/Google Chrome Canary.app/"; }
-        { path = "/Applications/Microsoft Edge.app/"; }
         { path = "/Applications/Safari.app/"; }
         { path = "/Applications/1Password.app/"; }
         { path = "/Applications/Fork.app/"; }
