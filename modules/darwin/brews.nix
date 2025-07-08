@@ -24,4 +24,6 @@ _:
 
     # "majd/repo/ipatool"
     "you-get"
+
+    "cocoapods"
 ]

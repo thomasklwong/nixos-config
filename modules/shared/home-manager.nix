@@ -28,7 +28,12 @@ let name = "Thomas Wong";
         . /nix/var/nix/profiles/default/etc/profile.d/nix.sh
       fi
 
+      # According to Tauri's doc
+      # Also ANDROID_HOME and NDK_HOME happened after this
+      export JAVA_HOME="/Applications/Android Studio.app/Contents/jbr/Contents/Home"
+
       export ANDROID_HOME=$HOME/Library/Android/sdk
+      export NDK_HOME="$ANDROID_HOME/ndk/$(ls -1 $ANDROID_HOME/ndk)"
 
       # Define variables for directories
       # This will be last added path
