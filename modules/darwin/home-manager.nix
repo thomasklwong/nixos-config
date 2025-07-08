@@ -52,7 +52,7 @@ in
       "LINE" = 539883307;
       # "GarageBand" = 682658836;
       # "GoPro Player" = 1460836908;
-      # "HP Smart" = 1474276998;
+      "HP Smart" = 1474276998;
       "1Password for Safari" = 1569813296;
       # "Wireless@SGx" = 1449928544;
     };
