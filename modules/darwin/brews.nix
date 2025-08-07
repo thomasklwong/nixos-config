@@ -16,6 +16,7 @@ _:
     "python-setuptools"
 
     "hashicorp/tap/terraform"
+    "teamookla/speedtest/speedtest"
     "ruby-build"
     "tsduck"
     "ramalama"
