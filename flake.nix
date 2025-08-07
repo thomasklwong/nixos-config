@@ -39,6 +39,11 @@
       flake = false;
     };
 
+    speedtest-homebrew-tap = {
+      url = "github:teamookla/homebrew-speedtest";
+      flake = false;
+    };
+
     disko = {
       url = "github:nix-community/disko";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -59,6 +64,7 @@
     homebrew-core, 
     homebrew-cask, 
     hashicorp-homebrew-tap, 
+    speedtest-homebrew-tap,
     home-manager, 
     nixpkgs, 
     disko, 
@@ -127,6 +133,7 @@
                   "homebrew/homebrew-cask" = homebrew-cask;
                   "homebrew/homebrew-bundle" = homebrew-bundle;
                   "hashicorp/homebrew-tap" = hashicorp-homebrew-tap;
+                  "teamookla/homebrew-speedtest" = speedtest-homebrew-tap;
                 };
                 mutableTaps = false;
                 autoMigrate = true;
