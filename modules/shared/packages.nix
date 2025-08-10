@@ -50,13 +50,6 @@ with pkgs; [
   xz
   yt-dlp
 
-  # Node.js and related global setup
-  nodejs
-  # Node.js development tools
-  # nodePackages.npm # globally install npm
-  # nodePackages.prettier
-  # nodejs
-
   # Scanner
   # cdxgen
   trivy
@@ -104,6 +97,4 @@ with pkgs; [
   # Python packages
   # python39
   # python39Packages.virtualenv # globally install virtualenv
-
-  gemini-cli
 ]

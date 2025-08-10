@@ -4,6 +4,13 @@
 MISE_NODE_COREPACK = 'true'
 
 [tools]
+# To avoid delay in Nix package, move all Node.js package from Nix to Mise.
+node = 'latest'
+
+# Refer to https://mise.jdx.dev/dev-tools/backends/npm.html#npm-backend
+# on how to use npm backend.
+"npm:biome" = 'latest'
+"npm:@google/gemini-cli" = 'latest'
 
 # set with `mise use -g`
 # node = 'lts'
@@ -23,6 +30,4 @@ legacy_version_file_disable_tools = []
 plugin_autoupdate_last_check_duration = '1 day'
 
 # Config files with this prefix will be trusted by default
-trusted_config_paths = [
-    '~/src'
-]
+trusted_config_paths = ['~/src']

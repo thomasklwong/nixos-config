@@ -19,4 +19,9 @@ echo "${YELLOW}Switching to new generation...${NC}"
 echo "${YELLOW}Cleaning up...${NC}"
 unlink ./result
 
+# I assume there's no mise config in this repo or it may not work.
+echo "${YELLOW} Install and upgrade MISE managed tools"
+sudo -u "$SUDO_USER" mise install
+sudo -u "$SUDO_USER" mise upgrade --bump
+
 echo "${GREEN}Switch to new generation complete!${NC}"
