@@ -85,13 +85,13 @@ This will fetch the latest versions of all the inputs defined in the `flake.nix`
 
 ## Applying Changes
 
-After updating the flake or making changes to the configuration, build and apply the new configuration by running the following command:
+After updating the flake or making changes to the configuration, the new configuration needs to be built and applied. This is done by running the following command in a terminal:
 
 ```bash
 sudo nix run .#build-switch
 ```
 
-This command will build and activate the new configuration for the macOS system.
+This command will build and activate the new configuration for the macOS system. It requires `sudo` because it modifies system-level files.
 
 ## Eventual Removal of NixOS
 

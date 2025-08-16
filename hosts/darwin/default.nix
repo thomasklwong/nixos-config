@@ -1,4 +1,4 @@
-{ agenix, config, inputs, pkgs, ... }:
+{ config, inputs, pkgs, ... }:
 
 let user = "thomas"; in
 
@@ -8,7 +8,7 @@ let user = "thomas"; in
     ../../modules/darwin/home-manager.nix
     ../../modules/shared
     ../../modules/shared/cachix
-    agenix.darwinModules.default
+    # agenix.darwinModules.default
   ];
 
   ids.gids.nixbld = 350;
@@ -41,7 +41,7 @@ let user = "thomas"; in
 
   # Load configuration that is shared across systems
   environment.systemPackages = with pkgs; [
-    agenix.packages."${pkgs.system}".default
+    # agenix.packages."${pkgs.system}".default
   ] ++ (import ../../modules/shared/packages.nix { inherit pkgs; });
 
   environment = {
