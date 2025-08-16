@@ -1,0 +1,18 @@
+{
+  "contextFileName": [
+    "README.md",
+  ],
+  "mcpServers": {
+    "context7": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@upstash/context7-mcp"
+      ]
+    }
+  },
+  "checkpointing": {
+    "enabled": true
+  },
+  "usageStatisticsEnabled": false
+}
