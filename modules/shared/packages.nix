@@ -48,7 +48,7 @@ with pkgs; [
   watch
   wkhtmltopdf
   xz
-  yt-dlp
+  # yt-dlp
 
   # Scanner
   # cdxgen
