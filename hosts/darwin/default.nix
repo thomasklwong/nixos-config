@@ -1,4 +1,4 @@
-{ config, inputs, pkgs, ... }:
+{ config, inputs, pkgs, nixpkgs-stable, ... }:
 
 let user = "thomas"; in
 
@@ -42,6 +42,7 @@ let user = "thomas"; in
   # Load configuration that is shared across systems
   environment.systemPackages = with pkgs; [
     # agenix.packages."${pkgs.system}".default
+    nixpkgs-stable.legacyPackages.aarch64-darwin.yt-dlp
   ] ++ (import ../../modules/shared/packages.nix { inherit pkgs; });
 
   environment = {

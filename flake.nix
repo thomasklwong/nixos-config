@@ -2,6 +2,7 @@
   description = "Thomas Wong Configuration with secrets for MacOS and NixOS";
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-25.05";
     # agenix.url = "github:ryantm/agenix";
     home-manager.url = "github:nix-community/home-manager";
     nix-homebrew.url = "github:zhaofengli-wip/nix-homebrew";
@@ -58,16 +59,17 @@
   };
   outputs = { 
     self, 
-    darwin, 
-    nix-homebrew, 
-    homebrew-bundle, 
-    homebrew-core, 
-    homebrew-cask, 
-    hashicorp-homebrew-tap, 
+    darwin,
+    nix-homebrew,
+    homebrew-bundle,
+    homebrew-core,
+    homebrew-cask,
+    hashicorp-homebrew-tap,
     speedtest-homebrew-tap,
-    home-manager, 
-    nixpkgs, 
-    disko, 
+    home-manager,
+    nixpkgs,
+    nixpkgs-stable,
+    disko,
     /* agenix, */ 
     /* secrets */ ... 
   } @inputs:

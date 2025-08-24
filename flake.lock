@@ -22,11 +22,11 @@
     "brew-api": {
       "flake": false,
       "locked": {
-        "lastModified": 1756038053,
-        "narHash": "sha256-JUl3BrAZg1zHVMVqG+C5oR9n0qQyGKQGNYR7RY2pU+A=",
+        "lastModified": 1756044584,
+        "narHash": "sha256-UCO5KF2mQ7veTALaSnKj4R+NKY9CnngW/yF4sDimqh8=",
         "owner": "BatteredBunny",
         "repo": "brew-api",
-        "rev": "fb598354a6ce3b9b4e84219723e3ca4ed83188c3",
+        "rev": "b65ff61ebf48ddbf7af69243b6fbae5c0f9893f6",
         "type": "github"
       },
       "original": {
@@ -186,11 +186,11 @@
     "homebrew-cask": {
       "flake": false,
       "locked": {
-        "lastModified": 1756035649,
-        "narHash": "sha256-SVVY7NsPB7tYoqJHLUupjfcP1a8MI7rQllnXLCCBq4Y=",
+        "lastModified": 1756042723,
+        "narHash": "sha256-UvbpiUdOSnMzJlH0lC+ZiaVS2OHDvbFo2dLgiTu69xQ=",
         "owner": "homebrew",
         "repo": "homebrew-cask",
-        "rev": "9e78ad08782b989013ad4ede1b107289ef6cbbdc",
+        "rev": "2a81791bfdccf93853858263debf2a2a51d9adc7",
         "type": "github"
       },
       "original": {
@@ -202,11 +202,11 @@
     "homebrew-core": {
       "flake": false,
       "locked": {
-        "lastModified": 1756038291,
-        "narHash": "sha256-vXERMd2mTTc7DcjfsWra5K303CGQvVuwH5/9090E9RA=",
+        "lastModified": 1756045484,
+        "narHash": "sha256-KpVj5V5zHpRXN+OuN6t2YdU0TvN+uPjSSAnVVATIqbs=",
         "owner": "homebrew",
         "repo": "homebrew-core",
-        "rev": "782f57950c2112793208a9c9d8621c0f8a8b65eb",
+        "rev": "ab466ba26425ec98687375eb9b2a391cd462490e",
         "type": "github"
       },
       "original": {
@@ -266,6 +266,22 @@
       "original": {
         "owner": "NixOS",
         "ref": "nixpkgs-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs-stable": {
+      "locked": {
+        "lastModified": 1755922037,
+        "narHash": "sha256-wY1+2JPH0ZZC4BQefoZw/k+3+DowFyfOxv17CN/idKs=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "b1b3291469652d5a2edb0becc4ef0246fff97a7c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-25.05",
         "repo": "nixpkgs",
         "type": "github"
       }
@@ -332,6 +348,7 @@
         "homebrew-core": "homebrew-core",
         "nix-homebrew": "nix-homebrew",
         "nixpkgs": "nixpkgs_4",
+        "nixpkgs-stable": "nixpkgs-stable",
         "speedtest-homebrew-tap": "speedtest-homebrew-tap"
       }
     },
