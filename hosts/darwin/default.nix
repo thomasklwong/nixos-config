@@ -42,7 +42,8 @@ let user = "thomas"; in
   # Load configuration that is shared across systems
   environment.systemPackages = with pkgs; [
     # agenix.packages."${pkgs.system}".default
-    nixpkgs-stable.legacyPackages.aarch64-darwin.yt-dlp
+    # nixpkgs-stable.legacyPackages.aarch64-darwin.yt-dlp
+    # python313Packages.curl-cffi
   ] ++ (import ../../modules/shared/packages.nix { inherit pkgs; });
 
   environment = {

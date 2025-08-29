@@ -48,7 +48,8 @@ with pkgs; [
   watch
   wkhtmltopdf
   xz
-  # yt-dlp
+  yt-dlp
+  python313Packages.curl-cffi
 
   # Scanner
   # cdxgen
