@@ -29,6 +29,8 @@ _:
   "logi-options+"
   "macs-fan-control"
   "nordvpn"
+  "notion"
+  "notion-calendar"
   "notunes"
   "obsidian"
   "pgadmin4"

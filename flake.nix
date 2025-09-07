@@ -5,7 +5,7 @@
     nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-25.05";
     # agenix.url = "github:ryantm/agenix";
     home-manager.url = "github:nix-community/home-manager";
-    nix-homebrew.url = "github:zhaofengli-wip/nix-homebrew";
+    nix-homebrew.url = "github:zhaofengli/nix-homebrew";
     _1password-shell-plugins.url = "github:1Password/shell-plugins";
 
     darwin = {

@@ -92,6 +92,7 @@ in
       entries = [
         { path = "/Applications/LINE.app/"; }
         { path = "/Applications/Signal.app/"; }
+        { path = "/Applications/Donut Browser.app/"; }
         { path = "/Applications/Firefox.app/"; }
         { path = "/Applications/Firefox Developer Edition.app/"; }
         { path = "/Applications/Firefox Nightly.app/"; }
@@ -103,6 +104,8 @@ in
         { path = "/Applications/Fork.app/"; }
         { path = "/Applications/Obsidian.app/"; }
         { path = "/Applications/Visual Studio Code.app/"; }
+        { path = "/Applications/Notion.app/"; }
+        { path = "/Applications/Notion Calendar.app/"; }
         { path = "/Applications/Ghostty.app/"; }
         {
           path = "${config.users.users.${user}.home}/Downloads";
