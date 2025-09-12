@@ -34,6 +34,7 @@ with pkgs; [
   lz4
   pandoc
   python3
+  uv
   qemu_full
   mise
   mkcert
