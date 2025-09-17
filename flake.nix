@@ -1,15 +1,15 @@
 {
   description = "Thomas Wong Configuration with secrets for MacOS and NixOS";
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-25.05";
+    nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
+    nixpkgs-stable.url = "github:nixos/nixpkgs/nixpkgs-25.05-darwin";
     # agenix.url = "github:ryantm/agenix";
     home-manager.url = "github:nix-community/home-manager";
     nix-homebrew.url = "github:zhaofengli/nix-homebrew";
     _1password-shell-plugins.url = "github:1Password/shell-plugins";
 
     darwin = {
-      url = "github:LnL7/nix-darwin/master";
+      url = "github:nix-darwin/nix-darwin/master";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 

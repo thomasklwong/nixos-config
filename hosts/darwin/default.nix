@@ -1,4 +1,4 @@
-{ config, inputs, pkgs, nixpkgs-stable, ... }:
+{ self, config, inputs, pkgs, nixpkgs, nixpkgs-stable, ... }:
 
 let user = "thomas"; in
 
@@ -13,6 +13,8 @@ let user = "thomas"; in
 
   ids.gids.nixbld = 350;
 
+  nixpkgs.hostPlatform = "aarch64-darwin";
+
   # Setup user, packages, programs
   nix = {
     package = pkgs.nix;
@@ -20,6 +22,7 @@ let user = "thomas"; in
     settings = {
       trusted-users = [ "@admin" "${user}" ];
       download-buffer-size = 5368709120;
+      experimental-features = "nix-command flakes";
     };
 
     gc = {
@@ -27,11 +30,6 @@ let user = "thomas"; in
       interval = { Weekday = 0; Hour = 2; Minute = 0; };
       options = "--delete-older-than 30d";
     };
-
-    # Turn this on to make command line easier
-    extraOptions = ''
-      experimental-features = nix-command flakes
-    '';
   };
 
   programs = {
@@ -59,9 +57,11 @@ let user = "thomas"; in
   };
 
   system = {
+    configurationRevision = self.rev or self.dirtyRev or null;
+
     primaryUser = "thomas";
 
-    stateVersion = 4;
+    stateVersion = 6;
 
     checks = {
       # Turn off NIX_PATH warnings now that we're using flakes
