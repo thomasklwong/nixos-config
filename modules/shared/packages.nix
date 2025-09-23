@@ -64,6 +64,7 @@ with pkgs; [
 
   fclones
   rsync
+  czkawka
 
   n-m3u8dl-re
 
