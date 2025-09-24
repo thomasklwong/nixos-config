@@ -34,6 +34,7 @@ _:
   "notunes"
   "obsidian"
   "pgadmin4"
+  "podman-desktop"
   "porting-kit"
   "postman"
   "rectangle"
