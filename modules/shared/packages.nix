@@ -100,4 +100,5 @@ with pkgs; [
   # Python packages
   # python39
   # python39Packages.virtualenv # globally install virtualenv
+  mitmproxy2swagger
 ]
