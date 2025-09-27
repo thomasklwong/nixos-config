@@ -28,6 +28,7 @@ _:
   "kindle-previewer"
   "logi-options+"
   "macs-fan-control"
+  "mitmproxy"
   "nordvpn"
   "notion"
   "notion-calendar"
