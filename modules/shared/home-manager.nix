@@ -44,6 +44,7 @@ let name = "Thomas Wong";
       export PATH=$HOME/.pnpm-packages/bin:$HOME/.pnpm-packages:$PATH
       export PATH=$HOME/.npm-packages/bin:$HOME/bin:$PATH
       export PATH=$HOME/.local/share/bin:$PATH
+      export PATH=$HOME/.local/bin:$PATH
       # This will be first added path
 
       # Remove history data we don't want to see
