@@ -67,6 +67,7 @@ with pkgs; [
   czkawka
 
   n-m3u8dl-re
+  podman
 
   # bash-completion
   # neofetch
