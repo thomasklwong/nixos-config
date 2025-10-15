@@ -126,6 +126,11 @@
             home-manager.darwinModules.home-manager
             nix-homebrew.darwinModules.nix-homebrew
             {
+              nixpkgs.overlays = [
+                (self: super: {
+                  licensee = inputs.nixpkgs-stable.legacyPackages.${self.system}.licensee;
+                })
+              ];
               nix-homebrew = {
                 inherit user;
                 enable = true;
