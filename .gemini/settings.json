@@ -1,7 +1,14 @@
 {
-  "contextFileName": [
-    "README.md"
-  ],
+  "general": {
+    "checkpointing": {
+      "enabled": true
+    }
+  },
+  "context": {
+    "fileName": [
+      "README.md"
+    ]
+  },
   "mcpServers": {
     "context7": {
       "command": "npx",
@@ -11,8 +18,7 @@
       ]
     }
   },
-  "checkpointing": {
-    "enabled": true
-  },
-  "usageStatisticsEnabled": false
+  "privacy": {
+    "usageStatisticsEnabled": false
+  }
 }
