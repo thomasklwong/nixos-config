@@ -95,26 +95,6 @@
         "type": "github"
       }
     },
-    "disko": {
-      "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1758287904,
-        "narHash": "sha256-IGmaEf3Do8o5Cwp1kXBN1wQmZwQN3NLfq5t4nHtVtcU=",
-        "owner": "nix-community",
-        "repo": "disko",
-        "rev": "67ff9807dd148e704baadbd4fd783b54282ca627",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nix-community",
-        "repo": "disko",
-        "type": "github"
-      }
-    },
     "hashicorp-homebrew-tap": {
       "flake": false,
       "locked": {
@@ -168,11 +148,11 @@
     "homebrew-cask": {
       "flake": false,
       "locked": {
-        "lastModified": 1760538420,
-        "narHash": "sha256-/gvZn3T7lymxoKe5Fp8Wsp6yVx+I6yCBCad44Y7P4k8=",
+        "lastModified": 1760543697,
+        "narHash": "sha256-PstHaQGd038jwsavSKZh8rW9LMkfE5ONaG70XF3/RoM=",
         "owner": "homebrew",
         "repo": "homebrew-cask",
-        "rev": "fbfd37147c2bd659506f94c7f50f46703e5207fa",
+        "rev": "ecfe5fa15c4c4bcb0043144745e23be20f3a9b22",
         "type": "github"
       },
       "original": {
@@ -322,7 +302,6 @@
         "brew-api": "brew-api",
         "brew-nix": "brew-nix",
         "darwin": "darwin",
-        "disko": "disko",
         "hashicorp-homebrew-tap": "hashicorp-homebrew-tap",
         "home-manager": "home-manager",
         "homebrew-bundle": "homebrew-bundle",
