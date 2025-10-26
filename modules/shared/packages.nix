@@ -68,6 +68,8 @@ with pkgs; [
 
   n-m3u8dl-re
   podman
+  kubectl
+  kind
 
   # bash-completion
   # neofetch
