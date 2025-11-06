@@ -92,12 +92,9 @@ in
       entries = [
         { path = "/Applications/LINE.app/"; }
         { path = "/Applications/Signal.app/"; }
-        { path = "/Applications/Donut Browser.app/"; }
         { path = "/Applications/Firefox.app/"; }
         { path = "/Applications/Firefox Developer Edition.app/"; }
-        { path = "/Applications/Firefox Nightly.app/"; }
         { path = "/Applications/Google Chrome.app/"; }
-        { path = "/Applications/Google Chrome Beta.app/"; }
         { path = "/Applications/Google Chrome Canary.app/"; }
         { path = "/Applications/Safari.app/"; }
         { path = "/Applications/1Password.app/"; }
