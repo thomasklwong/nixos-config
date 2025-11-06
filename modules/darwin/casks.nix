@@ -14,11 +14,9 @@ _:
   "disk-drill"
   "firefox"
   "firefox@developer-edition"
-  "firefox@nightly"
   "fork"
   "ghostty"
   "google-chrome"
-  "google-chrome@beta"
   "google-chrome@canary"
   "google-drive"
   "handbrake-app"
@@ -56,10 +54,6 @@ _:
   "xquartz"
   "yam-display"
   "zenmap"
-
-  #Browsers
-  # Donut Browser missing
-  # https://github.com/zhom/donutbrowser
 
   # Editors
   "zed"
