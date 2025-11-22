@@ -6,6 +6,7 @@ with pkgs; [
   # at /Application
   _1password-cli
   age
+  apktool
   aspell
   aspellDicts.en
   awscli2
@@ -25,6 +26,7 @@ with pkgs; [
   ffmpeg-full
   fzf
   gh
+  google-cloud-sdk
   htop
   imagemagickBig
   inetutils
