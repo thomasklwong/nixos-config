@@ -27,4 +27,6 @@ _:
     "you-get"
 
     "cocoapods"
+
+    "jadx"
 ]
