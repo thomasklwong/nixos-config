@@ -67,4 +67,5 @@ _:
   "lm-studio"
   # Piece is interesting but used too much memory for good.
   # "pieces"
+  "genymotion"
 ]
