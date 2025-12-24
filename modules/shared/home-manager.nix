@@ -40,6 +40,7 @@ let name = "Thomas Wong";
       export PATH=$ANDROID_HOME/tools:$PATH
       export PATH=$ANDROID_HOME/tools/bin:$PATH
       export PATH=$ANDROID_HOME/platform-tools:$PATH
+      export PATH=$ANDROID_HOME/emulator:$PATH
       export PATH=/opt/homebrew/bin:$PATH
       export PATH=$HOME/.pnpm-packages/bin:$HOME/.pnpm-packages:$PATH
       export PATH=$HOME/.npm-packages/bin:$HOME/bin:$PATH
