@@ -22,11 +22,11 @@
     "brew-api": {
       "flake": false,
       "locked": {
-        "lastModified": 1766582928,
-        "narHash": "sha256-Dqvd3yWz+0z/FieNDLGnhGLEmayVUEOm46ktM5MXM2Y=",
+        "lastModified": 1766585723,
+        "narHash": "sha256-sg92xJd7EXeX0bBjFLMhd78Zto2xbYpg2V1EV/zhLz4=",
         "owner": "BatteredBunny",
         "repo": "brew-api",
-        "rev": "709971052361e0a665c7350131d38e6e39d5ee94",
+        "rev": "0e8c7f6d7c7d94458ea4dd79cd07760d45ce97f2",
         "type": "github"
       },
       "original": {
@@ -71,6 +71,22 @@
         "owner": "Homebrew",
         "ref": "5.0.3",
         "repo": "brew",
+        "type": "github"
+      }
+    },
+    "colmsg-homebrew-tap": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1757229281,
+        "narHash": "sha256-YRI47uwERgAITCwF+RuUKkMeu9jqWCSSIRrZdiYKW0A=",
+        "owner": "proshunsuke",
+        "repo": "homebrew-colmsg",
+        "rev": "dbaf150b204a9df8b65f1639f53fd3023ee9c6aa",
+        "type": "github"
+      },
+      "original": {
+        "owner": "proshunsuke",
+        "repo": "homebrew-colmsg",
         "type": "github"
       }
     },
@@ -148,11 +164,11 @@
     "homebrew-cask": {
       "flake": false,
       "locked": {
-        "lastModified": 1766584342,
-        "narHash": "sha256-k/7/W6nX97ibtdIgAZbeNHio3tFKXEJK3Xk5frQRrDM=",
+        "lastModified": 1766588143,
+        "narHash": "sha256-asfz62/9t9jYvcgc8HNGsLPL4ngMCDDh/nuvZm408Wg=",
         "owner": "homebrew",
         "repo": "homebrew-cask",
-        "rev": "c58c7d74299ed392d6a47d64b5ecb8256d5a44eb",
+        "rev": "eb15837860aa77006f7b4780de19ff7f1d946a04",
         "type": "github"
       },
       "original": {
@@ -164,11 +180,11 @@
     "homebrew-core": {
       "flake": false,
       "locked": {
-        "lastModified": 1766584690,
-        "narHash": "sha256-QQfXQ1dAOycaY16pCxhOEZS2kkJbf05eDmOkzu3ERrk=",
+        "lastModified": 1766588490,
+        "narHash": "sha256-xTvSJtNYsJE2cvB3OvNNGyQVyQQsq5k1uHarPRf30bw=",
         "owner": "homebrew",
         "repo": "homebrew-core",
-        "rev": "bc5044bfd4bf84b32ed459bdf0763a46cc233e4e",
+        "rev": "45cfca1d527ee53fbfe84e9ddee3a45ea663b0e0",
         "type": "github"
       },
       "original": {
@@ -301,6 +317,7 @@
         "_1password-shell-plugins": "_1password-shell-plugins",
         "brew-api": "brew-api",
         "brew-nix": "brew-nix",
+        "colmsg-homebrew-tap": "colmsg-homebrew-tap",
         "darwin": "darwin",
         "hashicorp-homebrew-tap": "hashicorp-homebrew-tap",
         "home-manager": "home-manager",

@@ -45,6 +45,11 @@
       flake = false;
     };
 
+    colmsg-homebrew-tap = {
+      url = "github:proshunsuke/homebrew-colmsg";
+      flake = false;
+    };
+
 
     # secrets = {
     #  url = "git+ssh://git@github.com/thomasklwong/nix-secrets.git";
@@ -61,6 +66,7 @@
     homebrew-cask,
     hashicorp-homebrew-tap,
     speedtest-homebrew-tap,
+    colmsg-homebrew-tap,
     home-manager,
     nixpkgs,
     nixpkgs-stable,
@@ -125,6 +131,7 @@
                   "homebrew/homebrew-bundle" = homebrew-bundle;
                   "hashicorp/homebrew-tap" = hashicorp-homebrew-tap;
                   "teamookla/homebrew-speedtest" = speedtest-homebrew-tap;
+                  "proshunsuke/homebrew-colmsg" = colmsg-homebrew-tap;
                 };
                 mutableTaps = false;
                 autoMigrate = true;

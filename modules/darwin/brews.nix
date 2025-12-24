@@ -29,4 +29,5 @@ _:
     "cocoapods"
 
     "jadx"
+    "colmsg"
 ]
