@@ -2,7 +2,7 @@ _:
 
 [
   "1password"
-  "adobe-digital-editions"
+  #"adobe-digital-editions"
   "android-studio"
   "appcleaner"
   "bruno"
