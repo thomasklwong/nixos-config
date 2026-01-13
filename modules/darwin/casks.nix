@@ -69,4 +69,5 @@ _:
   # "pieces"
   "genymotion"
   "http-toolkit"
+  "osaurus"
 ]
