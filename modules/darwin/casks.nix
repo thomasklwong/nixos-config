@@ -49,7 +49,6 @@ _:
   "visual-studio-code"
   "vlc"
   "vysor"
-  "wine-stable"
   "wireshark-app"
   "xquartz"
   "yam-display"
