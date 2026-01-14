@@ -11,7 +11,7 @@ node = 'latest'
 # on how to use npm backend.
 "npm:biome" = 'latest'
 "npm:@google/gemini-cli" = 'latest'
-"npm:@fission-ai/openspec@latest" = 'latest'
+"npm:@fission-ai/openspec" = 'latest'
 
 # set with `mise use -g`
 # node = 'lts'
