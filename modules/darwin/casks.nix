@@ -69,4 +69,5 @@ _:
   "genymotion"
   "http-toolkit"
   "osaurus"
+  "codexbar"
 ]

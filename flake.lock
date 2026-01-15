@@ -22,11 +22,11 @@
     "brew-api": {
       "flake": false,
       "locked": {
-        "lastModified": 1768354367,
-        "narHash": "sha256-xWx2PeoPE4cXDCCDg1kN5gL1satjHIgTUTu7itty9/c=",
+        "lastModified": 1768497045,
+        "narHash": "sha256-kv5tIAxP9zCCfpFt1e78xyBpS9LFsSn51QG1EPZKEPI=",
         "owner": "BatteredBunny",
         "repo": "brew-api",
-        "rev": "899284c433841983a96f4f03597f0dc374b0b416",
+        "rev": "eb6d6a7cc1ce85f479b02911fb06040ce909f32d",
         "type": "github"
       },
       "original": {
@@ -71,6 +71,22 @@
         "owner": "Homebrew",
         "ref": "5.0.3",
         "repo": "brew",
+        "type": "github"
+      }
+    },
+    "codexbar-homebrew-tap": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1768470963,
+        "narHash": "sha256-5suXSrrS0Yws3Y+fsd/l9ocPIDXUQO6yT58skylLnfU=",
+        "owner": "steipete",
+        "repo": "homebrew-tap",
+        "rev": "144c76c309a555d0ab43a17cd3d2c17d58dabe82",
+        "type": "github"
+      },
+      "original": {
+        "owner": "steipete",
+        "repo": "homebrew-tap",
         "type": "github"
       }
     },
@@ -132,11 +148,11 @@
         "nixpkgs": "nixpkgs_3"
       },
       "locked": {
-        "lastModified": 1768349483,
-        "narHash": "sha256-dlWl/z/rdZmPGVexkYL1VLKBMU1e5Y1DZmQfiRf60cQ=",
+        "lastModified": 1768434960,
+        "narHash": "sha256-cJbFn17oyg6qAraLr+NVeNJrXsrzJdrudkzI4H2iTcg=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "c5d67517bbcaf37e15c416219c965cc707a0ca24",
+        "rev": "b4d88c9ac42ae1a745283f6547701da43b6e9f9b",
         "type": "github"
       },
       "original": {
@@ -164,11 +180,11 @@
     "homebrew-cask": {
       "flake": false,
       "locked": {
-        "lastModified": 1768357504,
-        "narHash": "sha256-RYOKezrrn5fAk5pu6XoRhZNen1DiHEW2RCNB0nn2TRg=",
+        "lastModified": 1768497440,
+        "narHash": "sha256-qndBaQ/WogKB0EXIFLqLY/ZdXDUAqXkNtvlueg1uq/M=",
         "owner": "homebrew",
         "repo": "homebrew-cask",
-        "rev": "7924cf588c22874ecded03994e134a832a7b8a3b",
+        "rev": "a3d285146666f088860585a48b40379b4b6d3489",
         "type": "github"
       },
       "original": {
@@ -180,11 +196,11 @@
     "homebrew-core": {
       "flake": false,
       "locked": {
-        "lastModified": 1768360543,
-        "narHash": "sha256-B14qlwiw+12N002xo2mMhaiuvyJ8D+udYk9YMUJ8ED4=",
+        "lastModified": 1768496927,
+        "narHash": "sha256-RfdX/YITk50VxWppq9RnfzWpAWTZujfwAFzJLXmlMts=",
         "owner": "homebrew",
         "repo": "homebrew-core",
-        "rev": "9fb276c88262bb2dee4c497e6f92d453fcb88c2c",
+        "rev": "09f85f07762fcadec5affebcae2e6d99feda5c9d",
         "type": "github"
       },
       "original": {
@@ -282,11 +298,11 @@
     },
     "nixpkgs_3": {
       "locked": {
-        "lastModified": 1767892417,
-        "narHash": "sha256-dhhvQY67aboBk8b0/u0XB6vwHdgbROZT3fJAjyNh5Ww=",
+        "lastModified": 1768127708,
+        "narHash": "sha256-1Sm77VfZh3mU0F5OqKABNLWxOuDeHIlcFjsXeeiPazs=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "3497aa5c9457a9d88d71fa93a4a8368816fbeeba",
+        "rev": "ffbc9f8cbaacfb331b6017d5a5abb21a492c9a38",
         "type": "github"
       },
       "original": {
@@ -298,11 +314,11 @@
     },
     "nixpkgs_4": {
       "locked": {
-        "lastModified": 1768302833,
-        "narHash": "sha256-h5bRFy9bco+8QcK7rGoOiqMxMbmn21moTACofNLRMP4=",
+        "lastModified": 1768395095,
+        "narHash": "sha256-ZhuYJbwbZT32QA95tSkXd9zXHcdZj90EzHpEXBMabaw=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "61db79b0c6b838d9894923920b612048e1201926",
+        "rev": "13868c071cc73a5e9f610c47d7bb08e5da64fdd5",
         "type": "github"
       },
       "original": {
@@ -317,6 +333,7 @@
         "_1password-shell-plugins": "_1password-shell-plugins",
         "brew-api": "brew-api",
         "brew-nix": "brew-nix",
+        "codexbar-homebrew-tap": "codexbar-homebrew-tap",
         "colmsg-homebrew-tap": "colmsg-homebrew-tap",
         "darwin": "darwin",
         "hashicorp-homebrew-tap": "hashicorp-homebrew-tap",
