@@ -68,7 +68,6 @@ with pkgs; [
   rsync
   czkawka
 
-  n-m3u8dl-re
   podman
   kubectl
   kind
@@ -106,4 +105,8 @@ with pkgs; [
   # python39
   # python39Packages.virtualenv # globally install virtualenv
   mitmproxy2swagger
+  
+  # N_m3u8DL-RE
+  bento4
+  shaka-packager
 ]
