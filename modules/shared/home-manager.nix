@@ -72,13 +72,14 @@ let name = "Thomas Wong";
   git = {
     enable = true;
     ignores = [ "*.swp" ];
-    userName = name;
-    userEmail = email;
-    lfs = {
-      enable = true;
-    };
-    extraConfig = {
-      init.defaultBranch = "main";
+    settings = {
+      user = {
+        name = name;
+        email = email;
+      };
+      init = {
+        defaultBranch = "main";
+      };
       # core = {
         # editor = "vim";
         # autocrlf = "input";
@@ -86,6 +87,9 @@ let name = "Thomas Wong";
       # commit.gpgsign = true;
       # pull.rebase = true;
       # rebase.autoStash = true;
+    };
+    lfs = {
+      enable = true;
     };
   };
 }
