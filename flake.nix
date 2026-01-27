@@ -61,9 +61,6 @@
       flake = false;
     };
 
-
-
-
     # secrets = {
     #  url = "git+ssh://git@github.com/thomasklwong/nix-secrets.git";
     #  flake = false;
@@ -116,6 +113,7 @@
         "create-keys" = mkApp "create-keys" system;
         "check-keys" = mkApp "check-keys" system;
         "rollback" = mkApp "rollback" system;
+        "safe-update-build-switch-gc" = mkApp "safe-update-build-switch-gc" system;
       };
     in
     {
