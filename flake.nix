@@ -3,8 +3,14 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
     nixpkgs-stable.url = "github:nixos/nixpkgs/nixpkgs-25.05-darwin";
+    
     # agenix.url = "github:ryantm/agenix";
-    home-manager.url = "github:nix-community/home-manager";
+    
+    home-manager = {
+      url = "github:nix-community/home-manager";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     nix-homebrew.url = "github:zhaofengli/nix-homebrew";
     _1password-shell-plugins.url = "github:1Password/shell-plugins";
 
