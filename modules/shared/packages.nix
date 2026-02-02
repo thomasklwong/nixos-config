@@ -109,4 +109,7 @@ with pkgs; [
   # N_m3u8DL-RE
   bento4
   shaka-packager
+
+  age
+  sops
 ]
