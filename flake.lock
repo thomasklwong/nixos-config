@@ -127,6 +127,22 @@
         "type": "github"
       }
     },
+    "entireio-homebrew-tap": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1770734004,
+        "narHash": "sha256-N4xVtHaXQ4Cve5j90VlJsi6SrtOX7IN1dnqQnBUFqmo=",
+        "owner": "entireio",
+        "repo": "homebrew-tap",
+        "rev": "0216c5a8d36775067f9894e12e201c6eac06a0d5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "entireio",
+        "repo": "homebrew-tap",
+        "type": "github"
+      }
+    },
     "hashicorp-homebrew-tap": {
       "flake": false,
       "locked": {
@@ -322,6 +338,7 @@
         "codexbar-homebrew-tap": "codexbar-homebrew-tap",
         "colmsg-homebrew-tap": "colmsg-homebrew-tap",
         "darwin": "darwin",
+        "entireio-homebrew-tap": "entireio-homebrew-tap",
         "hashicorp-homebrew-tap": "hashicorp-homebrew-tap",
         "home-manager": "home-manager",
         "homebrew-bundle": "homebrew-bundle",

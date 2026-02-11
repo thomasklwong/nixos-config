@@ -70,4 +70,5 @@ _:
   "http-toolkit"
   "osaurus"
   "codexbar"
+  "entire"
 ]
