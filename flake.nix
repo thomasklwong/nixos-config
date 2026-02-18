@@ -128,15 +128,15 @@
 
       darwinConfigurations = nixpkgs.lib.genAttrs darwinSystems (system:
         darwin.lib.darwinSystem {
-          inherit system;
           specialArgs = inputs;
           modules = [
+            { nixpkgs.hostPlatform = system; }
             home-manager.darwinModules.home-manager
             nix-homebrew.darwinModules.nix-homebrew
             {
               nixpkgs.overlays = [
                 (self: super: {
-                  licensee = inputs.nixpkgs-stable.legacyPackages.${self.system}.licensee;
+                  licensee = inputs.nixpkgs-stable.legacyPackages.${self.stdenv.hostPlatform.system}.licensee;
                 })
               ];
               nix-homebrew = {

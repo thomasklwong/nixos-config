@@ -37,7 +37,7 @@ with pkgs; [
   pandoc
   python3
   uv
-  qemu_full
+  qemu
   mise
   mkcert
   nmap

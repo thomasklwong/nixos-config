@@ -13,7 +13,7 @@ let user = "thomas"; in
 
   ids.gids.nixbld = 350;
 
-  nixpkgs.hostPlatform = "aarch64-darwin";
+
 
   # Setup user, packages, programs
   nix = {
