@@ -71,4 +71,5 @@ _:
   "osaurus"
   "codexbar"
   "entire"
+  "hmans/beans/beans"
 ]

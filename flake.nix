@@ -66,6 +66,11 @@
       flake = false;
     };
 
+    hmans-homebrew-tap = {
+      url = "github:hmans/homebrew-beans";
+      flake = false;
+    };
+
     # secrets = {
     #  url = "git+ssh://git@github.com/thomasklwong/nix-secrets.git";
     #  flake = false;
@@ -84,6 +89,7 @@
     colmsg-homebrew-tap,
     codexbar-homebrew-tap,
     entireio-homebrew-tap,
+    hmans-homebrew-tap,
     home-manager,
     nixpkgs,
     nixpkgs-stable,
@@ -152,6 +158,7 @@
                   "proshunsuke/homebrew-colmsg" = colmsg-homebrew-tap;
                   "steipete/homebrew-codexbar" = codexbar-homebrew-tap;
                   "entireio/homebrew-tap" = entireio-homebrew-tap;
+                  "hmans/homebrew-beans" = hmans-homebrew-tap;
                 };
                 mutableTaps = false;
                 autoMigrate = true;
