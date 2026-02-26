@@ -30,4 +30,6 @@ _:
 
     "jadx"
     "colmsg"
+    "instaloader"
+    "gallery-dl"
 ]

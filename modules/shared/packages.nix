@@ -75,7 +75,7 @@ with pkgs; [
   # bash-completion
   # neofetch
   # openssh
-  # wget
+  wget
   # zip
 
   # Encryption and security tools
