@@ -32,4 +32,5 @@ _:
     "colmsg"
     "instaloader"
     "gallery-dl"
+    "colima"
 ]

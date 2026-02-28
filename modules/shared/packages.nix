@@ -15,7 +15,6 @@ with pkgs; [
   btop
   cabextract
   cloc
-  colima
   coreutils
   curlFull
   devenv
