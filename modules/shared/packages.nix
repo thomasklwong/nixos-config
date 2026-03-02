@@ -40,6 +40,7 @@ with pkgs; [
   mise
   mkcert
   nmap
+  nixfmt
   nss_latest
   ripgrep
   sqlite
