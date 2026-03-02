@@ -33,4 +33,5 @@ _:
     "instaloader"
     "gallery-dl"
     "colima"
+  "czkawka"
 ]

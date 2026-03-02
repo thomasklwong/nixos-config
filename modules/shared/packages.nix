@@ -65,7 +65,6 @@ with pkgs; [
 
   fclones
   rsync
-  czkawka
 
   podman
   kubectl
