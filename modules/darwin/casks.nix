@@ -50,21 +50,14 @@ _:
   "yam-display"
   "zenmap"
 
-  # Editors
-  "zed"
-
-  # Network
   "raspberry-pi-imager"
 
   # AI
-  "anythingllm"
   "block-goose"
   "lm-studio"
   # Piece is interesting but used too much memory for good.
   # "pieces"
-  "genymotion"
   "http-toolkit"
-  "osaurus"
   "codexbar"
   "entire"
   "hmans/beans/beans"
