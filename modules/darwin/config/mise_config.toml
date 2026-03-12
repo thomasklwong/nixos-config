@@ -9,9 +9,9 @@ node = 'latest'
 
 # Refer to https://mise.jdx.dev/dev-tools/backends/npm.html#npm-backend
 # on how to use npm backend.
-"npm:biome" = 'latest'
 "npm:@google/gemini-cli" = 'latest'
 "npm:@fission-ai/openspec" = 'latest'
+"npm:@aisuite/chub" = 'latest'
 
 # set with `mise use -g`
 # node = 'lts'

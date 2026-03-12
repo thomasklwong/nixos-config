@@ -1,8 +1,22 @@
-# Thomas Wong's Nix Configuration for macOS
+# Thomas Wong's nix-darwin configuration
 
-This repository contains my personal Nix configuration for macOS. It uses Nix and `nix-homebrew` to manage system and application dependencies.
+This repository contains my personal, purely declarative macOS system configuration using
 
-This configuration is derived from the work of [Mitchell Hashimoto](https://github.com/mitchellh/nixos-config) and [Dustin Lyons](https://github.com/dustinlyons/nixos-config).
+- [Nix](https://nixos.org/)
+- [Nix-darwin](https://nix-darwin.org/)
+- [Home-Manager](https://nix-community.github.io/home-manager/)
+
+> Important Note:
+> This repository is in the process of migration. The following section of code will be removed in the process.
+>
+> - Linux compatibility layer will be removed comppletely.
+> - Relevant shared modules will be merged to MacOS specific code.
+> - nix-homebrew will be removed comppletely. Homebrew will be managed by Home-Manager.
+
+## Architecture & Design Philosophy
+
+
+## Old Information Below
 
 ## macOS Management with Nix
 
@@ -66,4 +80,3 @@ This repository currently contains configurations for NixOS. However, the long-t
 ## Secrets Management
 
 This repository is prepared for managing secrets with `agenix`, but it is currently disabled. The necessary code is commented out in the configuration files and can be re-enabled in the future.
-
