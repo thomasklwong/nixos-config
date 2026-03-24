@@ -142,7 +142,8 @@
             {
               nixpkgs.overlays = [
                 (self: super: {
-                  licensee = inputs.nixpkgs-stable.legacyPackages.${self.stdenv.hostPlatform.system}.licensee;
+                  # Add packages here to downgrade them to the stable branch
+                  direnv = inputs.nixpkgs-stable.legacyPackages.${self.stdenv.hostPlatform.system}.direnv;
                 })
               ];
               nix-homebrew = {

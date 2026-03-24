@@ -1,4 +1,4 @@
-{ config, pkgs, brew-nix, inputs, ... }:
+{ config, pkgs, brew-nix, nixpkgs-stable, ... }:
 
 let
   emacsOverlaySha256 = "06413w510jmld20i4lik9b36cfafm501864yq8k4vxl5r4hn0j0h";
@@ -22,7 +22,7 @@ in
                   (attrNames (readDir path))))
 
       ++ [
-        ((import ../../overlays/fixes/default.nix) inputs.nixpkgs-stable)
+        ((import ../../overlays/fixes/default.nix) nixpkgs-stable)
         brew-nix.overlays.default
       ];
 
