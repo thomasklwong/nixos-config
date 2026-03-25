@@ -43,25 +43,9 @@ let name = "Thomas Wong";
         . /nix/var/nix/profiles/default/etc/profile.d/nix.sh
       fi
 
-      # 3. Environment Variables
-      export JAVA_HOME="/Applications/Android Studio.app/Contents/jbr/Contents/Home"
-      export ANDROID_HOME=$HOME/Library/Android/sdk
-
       if [ -d "$ANDROID_HOME/ndk" ]; then
          export NDK_HOME="$ANDROID_HOME/ndk/$(ls -1 "$ANDROID_HOME/ndk" | head -n 1)"
       fi
-
-      # 4. Path Construction (Ordered: Specific -> General)
-      # We explicitly set the path array. $path at the end includes existing system paths.
-      path=(
-        "$HOME/.local/bin"
-        "$HOME/.local/share/bin"
-        "$ANDROID_HOME/emulator"                 # This gives the `emulator` command
-        "$ANDROID_HOME/platform-tools"           # This gives the `adb` command
-        "$ANDROID_HOME/cmdline-tools/latest/bin" # This gives the `avdmanager` and `sdkmanager` command
-        "/opt/homebrew/bin"
-        $path
-      )
 
       # nix shortcuts
       shell() {
@@ -75,6 +59,7 @@ let name = "Thomas Wong";
       ls="ls --color=auto";
       search="rg -p --glob '!node_modules/*' ";
       diff="difft";
+      agy="/Applications/Antigravity.app/Contents/Resources/app/bin/antigravity";
     };
   };
 

@@ -75,6 +75,21 @@ in
           # { "emacs-launcher.command".source = myEmacsLauncher; }
         ];
 
+        sessionVariables = {
+          JAVA_HOME="/Applications/Android Studio.app/Contents/jbr/Contents/Home";
+          ANDROID_HOME = "${config.home.homeDirectory}/Library/Android/sdk";
+        };
+
+        sessionPath = [
+          "${config.home.homeDirectory}/.local/bin"
+          "${config.home.homeDirectory}/.local/share/bin"
+          "/opt/homebrew/bin"
+          "${config.home.sessionVariables.ANDROID_HOME}/emulator" # This gives the `emulator` command
+          "${config.home.sessionVariables.ANDROID_HOME}/platform-tools" # This gives the `adb` command
+          "${config.home.sessionVariables.ANDROID_HOME}/cmdline-tools/latest/bin" # This gives the `avdmanager` and `sdkmanager` command
+          "/Applications/Antigravity.app/Contents/Resources/app/bin"
+        ];
+
         stateVersion = "23.11";
       };
       programs = {} // import ../shared/home-manager.nix { inherit config pkgs lib; };
