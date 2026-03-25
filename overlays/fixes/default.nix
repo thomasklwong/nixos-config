@@ -1,6 +1,6 @@
 # overlays/fixes/default.nix
 stable-pkgs-input: self: super: {
-  licensee = (import stable-pkgs-input { system = self.system; }).licensee;
+  licensee = (import stable-pkgs-input { system = self.stdenv.hostPlatform.system; }).licensee;
   pythonPackagesExtensions = super.pythonPackagesExtensions ++ [
     (python-final: python-prev: {
       jeepney = python-prev.jeepney.overridePythonAttrs (oldAttrs: {

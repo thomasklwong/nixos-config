@@ -80,7 +80,7 @@ with pkgs; [
   # Encryption and security tools
   
   # age-plugin-yubikey
-  # gnupg
+  gnupg
   # libfido2
 
   # Media-related packages

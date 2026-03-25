@@ -10,10 +10,26 @@ let name = "Thomas Wong";
     autocd = false;
 
     history = {
+      size = 100000;
+      save = 100000;
+      ignoreDups = true;
+      ignoreAllDups = true;
+      ignoreSpace = true;
+      expireDuplicatesFirst = true;
+      extended = true;
+      share = true;
       ignorePatterns = [
         "pwd"
         "ls"
         "cd"
+        "clear"
+        "history"
+        "exit"
+        "fg"
+        "bg"
+        "top"
+        "htop"
+        "btop"
       ];
     };
 
@@ -65,6 +81,7 @@ let name = "Thomas Wong";
   git = {
     enable = true;
     ignores = [ "*.swp" ];
+    signing.format = "openpgp";
     settings = {
       user = {
         name = name;

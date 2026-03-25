@@ -11,6 +11,7 @@ _:
     "libpng"
     "jpeg"
     "giflib"
+    "mole"
     "librsvg"
     "pixman" 
     "python-setuptools"
